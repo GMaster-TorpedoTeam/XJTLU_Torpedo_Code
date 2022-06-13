@@ -4,6 +4,7 @@
 "xjtlu_torpeto\gpio.o"
 "xjtlu_torpeto\can.o"
 "xjtlu_torpeto\dma.o"
+"xjtlu_torpeto\tim.o"
 "xjtlu_torpeto\usart.o"
 "xjtlu_torpeto\stm32f4xx_it.o"
 "xjtlu_torpeto\stm32f4xx_hal_msp.o"
@@ -26,7 +27,9 @@
 "xjtlu_torpeto\stm32f4xx_hal_uart.o"
 "xjtlu_torpeto\system_stm32f4xx.o"
 "xjtlu_torpeto\bsp_rc.o"
+"xjtlu_torpeto\bsp_stepmotor.o"
 "xjtlu_torpeto\remote_control.o"
+"xjtlu_torpeto\step_motor_task.o"
 --strict --scatter "XJTLU_Torpeto\XJTLU_Torpeto.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

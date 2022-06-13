@@ -29,11 +29,15 @@ xjtlu_torpeto\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex
 xjtlu_torpeto\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 xjtlu_torpeto\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 xjtlu_torpeto\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+xjtlu_torpeto\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+xjtlu_torpeto\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 xjtlu_torpeto\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 xjtlu_torpeto\main.o: ../Core/Inc/can.h
 xjtlu_torpeto\main.o: ../Core/Inc/dma.h
+xjtlu_torpeto\main.o: ../Core/Inc/tim.h
 xjtlu_torpeto\main.o: ../Core/Inc/usart.h
 xjtlu_torpeto\main.o: ../Core/Inc/gpio.h
 xjtlu_torpeto\main.o: ..\applications\remote_control.h
 xjtlu_torpeto\main.o: ..\bsp\struct_typedef.h
 xjtlu_torpeto\main.o: ..\bsp\bsp_rc.h
+xjtlu_torpeto\main.o: ..\bsp\bsp_StepMotor.h

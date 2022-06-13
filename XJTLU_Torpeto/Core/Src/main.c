@@ -21,6 +21,7 @@
 #include "main.h"
 #include "can.h"
 #include "dma.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -28,6 +29,7 @@
 /* USER CODE BEGIN Includes */
 
 #include "remote_control.h"
+#include "bsp_StepMotor.h"
 
 /* USER CODE END Includes */
 
@@ -95,9 +97,13 @@ int main(void)
   MX_DMA_Init();
   MX_USART3_UART_Init();
   MX_CAN1_Init();
+  MX_TIM1_Init();
+  MX_TIM8_Init();
   /* USER CODE BEGIN 2 */
 	
 	remote_control_init();
+	//HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
+	HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_1);
 
   /* USER CODE END 2 */
 
