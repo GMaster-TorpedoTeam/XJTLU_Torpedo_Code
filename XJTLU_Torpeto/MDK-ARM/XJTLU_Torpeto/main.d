@@ -47,3 +47,9 @@ xjtlu_torpeto\main.o: ..\bsp\bsp_StepMotor.h
 xjtlu_torpeto\main.o: ..\applications\step_motor_task.h
 xjtlu_torpeto\main.o: ..\bsp\bsp_can.h
 xjtlu_torpeto\main.o: ..\applications\CAN_receive.h
+xjtlu_torpeto\main.o: ..\applications\user_pid.h
+xjtlu_torpeto\main.o: ..\components\controller\pid.h
+xjtlu_torpeto\main.o: ..\applications\shoot_speed_control.h
+xjtlu_torpeto\main.o: ..\components\devices\OLED.h
+xjtlu_torpeto\main.o: ..\applications\OLED_task.h
+xjtlu_torpeto\main.o: ..\applications\mode_task.h

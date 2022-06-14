@@ -38,6 +38,7 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 
+
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -58,6 +59,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define push_low_Pin GPIO_PIN_7
+#define push_low_GPIO_Port GPIOI
+#define push_high_Pin GPIO_PIN_6
+#define push_high_GPIO_Port GPIOI
 #define StepMotor2_pluse_signal_Pin GPIO_PIN_6
 #define StepMotor2_pluse_signal_GPIO_Port GPIOC
 #define StepMotro1_Dir_Pin GPIO_PIN_13

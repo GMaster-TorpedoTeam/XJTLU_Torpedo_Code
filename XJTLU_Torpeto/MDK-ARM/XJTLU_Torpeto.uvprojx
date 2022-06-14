@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;  ../Drivers/STM32F4xx_HAL_Driver/Inc;  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;  ../Drivers/CMSIS/Include;  ..\bsp;  ..\applications;  ..\components\controller</IncludePath>
+              <IncludePath>../Core/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy; ../Drivers/CMSIS/Device/ST/STM32F4xx/Include; ../Drivers/CMSIS/Include; ..\bsp; ..\applications; ..\components\controller; ..\components\devices</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -898,6 +898,21 @@
               <FileName>shoot_speed_control.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\applications\shoot_speed_control.c</FilePath>
+            </File>
+            <File>
+              <FileName>user_pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\user_pid.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\OLED_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>mode_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\mode_task.c</FilePath>
             </File>
           </Files>
         </Group>

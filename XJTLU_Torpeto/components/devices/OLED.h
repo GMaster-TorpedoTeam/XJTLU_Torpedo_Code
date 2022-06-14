@@ -264,4 +264,10 @@ extern void OLED_ShowNum(uint8_t row, uint8_t col,uint32_t num,uint8_t len);
   */
 void OLED_ShowFNum(uint8_t row, uint8_t col,float Fnum);
 
+
+/**
+  * @brief          «Â∆¡
+  */
+void OLED_Clear(void);
+
 #endif

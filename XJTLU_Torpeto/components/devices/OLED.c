@@ -558,21 +558,26 @@ void OLED_ShowNum(uint8_t row, uint8_t col,uint32_t num,uint8_t len)
   */
 void OLED_ShowFNum(uint8_t row, uint8_t col,float Fnum)
 {
-	
 	sprintf((char*)Data,"%.3f",Fnum);                 //保留小数点后3位小数，打印到Data数组中
 	OLED_show_string(row,col,Data);           //调用OLED字符串显示函数，在OLED屏上显示
-	/*
-	unsigned int i,flen;
-	unsigned char Data[sizeof(Fnum)];                //数据位数由sizeof(Fnum) 来判断，灵活创建数组大小 
-    sprintf(Data,"%.3f",Fnum);                       //保留小数点后3位小数，打印到Data数组中
-	flen = sizeof(Data)+1;							 //判断浮点数长度，方便后期打印输出 
-//	  printf("转后：%c",*Data);                       //测试用
-	for(i=0;i<flen;i++){							 //根据转后字符长度打印输出
-		  col+=1;																		        //每个字符占8位，向后占位
-		  OLED_show_char(row,col,Data[i]);     //调用oled字符显示函数，在OLED屏上逐个显示          
-		}
-*/
 }
+
+
+/**
+  * @brief          清屏
+  */
+void OLED_Clear(void)
+{ 
+	uint8_t i,n;		    
+	for(i=0;i<8;i++)  
+	{  
+		oled_write_byte (0xb0+i,OLED_CMD);    //设置页地址（0~7）
+		oled_write_byte(((0x00&0xf0)>>4)|0x00, OLED_CMD); //设置显示位置—列低地址
+		oled_write_byte((0x10&0x0f)|0x10, OLED_CMD);      //设置显示位置—列高地址   
+		for(n=0;n<0x10;n++)oled_write_byte(0,OLED_DATA); 
+	} //更新显示
+}
+
 
 
 

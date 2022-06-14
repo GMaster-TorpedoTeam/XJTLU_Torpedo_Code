@@ -34,6 +34,10 @@
 #include "step_motor_task.h"
 #include "bsp_can.h"
 #include "CAN_receive.h"
+#include "user_pid.h"
+#include "OLED.h" 
+#include "OLED_task.h"
+#include "mode_task.h"
 
 /* USER CODE END Includes */
 
@@ -56,7 +60,10 @@
 /* USER CODE BEGIN PV */
 
 extern RC_ctrl_t rc_ctrl;
-extern motor_measure_t motor_chassis;
+extern motor_measure_t motor_chassis[7];
+extern pid_type_def ShootMotor1;
+extern pid_type_def ShootMotor2;
+extern pid_type_def PushMotor;
 
 /* USER CODE END PV */
 
@@ -105,10 +112,14 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM8_Init();
   MX_I2C2_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 	
 	remote_control_init();
 	can_filter_init();
+	user_pid_Init();
+	//OLED_init();
+	HAL_TIM_Base_Start_IT(&htim2);
 
 
   /* USER CODE END 2 */
@@ -117,21 +128,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		/*
-		if(rc_ctrl.rc.s[1] == 1)
-		{
-			CAN_cmd_Torpedo(0, 0, 500);
-		}
-		else if(rc_ctrl.rc.s[1] == 2)
-		{
-			CAN_cmd_Torpedo(0, 0, 500);
-		}
-		*/
-		
-		CAN_cmd_Torpedo(500, 500, rc_ctrl.rc.ch[3]*3);
-		rc2StepMotor(motor_yaw_TIM);
-		rc2StepMotor(motor_pitch_TIM);
-		HAL_Delay(10);
+		CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, push_speed_set);
+		HAL_Delay(2);
+		//rc2StepMotor(motor_yaw_TIM);
+		//rc2StepMotor(motor_pitch_TIM);
+		//HAL_Delay(50);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

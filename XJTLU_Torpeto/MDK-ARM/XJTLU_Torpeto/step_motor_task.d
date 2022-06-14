@@ -38,4 +38,3 @@ xjtlu_torpeto\step_motor_task.o: ..\applications\remote_control.h
 xjtlu_torpeto\step_motor_task.o: ..\bsp\struct_typedef.h
 xjtlu_torpeto\step_motor_task.o: ..\bsp\bsp_rc.h
 xjtlu_torpeto\step_motor_task.o: ..\bsp\bsp_StepMotor.h
-xjtlu_torpeto\step_motor_task.o: ../Core/Inc/main.h
