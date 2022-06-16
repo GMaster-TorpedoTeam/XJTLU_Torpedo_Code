@@ -128,7 +128,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, push_speed_set);
+		CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, PushMotor.out);
 		HAL_Delay(2);
 		//rc2StepMotor(motor_yaw_TIM);
 		//rc2StepMotor(motor_pitch_TIM);

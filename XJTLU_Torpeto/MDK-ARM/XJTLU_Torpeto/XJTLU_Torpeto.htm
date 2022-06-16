@@ -3,7 +3,7 @@
 <title>Static Call Graph - [XJTLU_Torpeto\XJTLU_Torpeto.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image XJTLU_Torpeto\XJTLU_Torpeto.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Jun 14 23:06:05 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Jun 16 23:28:22 2022
 <BR><P>
 <H3>Maximum Stack Usage =        176 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -128,8 +128,8 @@ Function Pointers
 Global Symbols
 </H3>
 <P><STRONG><a name="[61]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
-<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<BR><BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
 <P><STRONG><a name="[62]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
@@ -221,8 +221,8 @@ Global Symbols
 <P><STRONG><a name="[fe]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
 
 <P><STRONG><a name="[63]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 </UL>
 
 <P><STRONG><a name="[ff]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
@@ -780,7 +780,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[da]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
-<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rc2StepMotor
+<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;push_motor_speed
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rc2StepMotor
 </UL>
 
 <P><STRONG><a name="[c4]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
@@ -976,7 +977,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[a9]"></a>HAL_TIM_IRQHandler</STRONG> (Thumb, 358 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = HAL_TIM_IRQHandler &rArr; HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = HAL_TIM_IRQHandler &rArr; HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_TriggerCallback
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_PulseFinishedCallback
@@ -1050,7 +1051,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ad]"></a>HAL_TIM_PeriodElapsedCallback</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, mode_task.o(i.HAL_TIM_PeriodElapsedCallback))
-<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_choose
 </UL>
@@ -1232,7 +1233,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(.text)
 </UL>
 <P><STRONG><a name="[2a]"></a>TIM2_IRQHandler</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.TIM2_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = TIM2_IRQHandler &rArr; HAL_TIM_IRQHandler &rArr; HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = TIM2_IRQHandler &rArr; HAL_TIM_IRQHandler &rArr; HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
@@ -1292,7 +1293,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6d]"></a>main</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[6d]"></a>main</STRONG> (Thumb, 118 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = main &rArr; MX_TIM8_Init &rArr; HAL_TIM_MspPostInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_pid_Init
@@ -1315,8 +1316,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[bc]"></a>mode_choose</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, mode_task.o(i.mode_choose))
-<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
+<P><STRONG><a name="[bc]"></a>mode_choose</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, mode_task.o(i.mode_choose))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_pid_Calc
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_speed_limit
@@ -1326,8 +1327,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PeriodElapsedCallback
 </UL>
 
-<P><STRONG><a name="[d8]"></a>push_motor_speed</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, shoot_speed_control.o(i.push_motor_speed))
-<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_choose
+<P><STRONG><a name="[d8]"></a>push_motor_speed</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, shoot_speed_control.o(i.push_motor_speed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = push_motor_speed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_choose
 </UL>
 
 <P><STRONG><a name="[d7]"></a>rc2StepMotor</STRONG> (Thumb, 198 bytes, Stack size 40 bytes, step_motor_task.o(i.rc2StepMotor))
@@ -1350,11 +1355,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[dd]"></a>shoot_motor_speed</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, shoot_speed_control.o(i.shoot_motor_speed))
+<P><STRONG><a name="[dd]"></a>shoot_motor_speed</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, shoot_speed_control.o(i.shoot_motor_speed))
 <BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_speed_limit
 </UL>
 
-<P><STRONG><a name="[d6]"></a>shoot_speed_limit</STRONG> (Thumb, 64 bytes, Stack size 4 bytes, shoot_speed_control.o(i.shoot_speed_limit))
+<P><STRONG><a name="[d6]"></a>shoot_speed_limit</STRONG> (Thumb, 90 bytes, Stack size 4 bytes, shoot_speed_control.o(i.shoot_speed_limit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = shoot_speed_limit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_motor_speed
@@ -1362,7 +1367,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_choose
 </UL>
 
-<P><STRONG><a name="[d9]"></a>user_pid_Calc</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, user_pid.o(i.user_pid_Calc))
+<P><STRONG><a name="[d9]"></a>user_pid_Calc</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, user_pid.o(i.user_pid_Calc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = user_pid_Calc
 </UL>
 <BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_calc

@@ -26,6 +26,6 @@ void user_pid_Calc(void)
 {
 	PID_calc(&ShootMotor1, motor_chassis[0].speed_rpm, -shoot_speed_set);
 	PID_calc(&ShootMotor2, motor_chassis[1].speed_rpm, shoot_speed_set);
-	//PID_calc(&PushMotor, PushMotor_read.speed_rpm, push_speed_set);
+	PID_calc(&PushMotor, motor_chassis[2].speed_rpm, push_speed_set);
 }
 

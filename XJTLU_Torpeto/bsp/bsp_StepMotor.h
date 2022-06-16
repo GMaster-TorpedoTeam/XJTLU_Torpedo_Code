@@ -41,12 +41,19 @@
 #define yaw_right_GPIO 		GPIOB
 #define yaw_right_PIN 		GPIO_PIN_12
 
+#define push_high_GPIO 		GPIOI
+#define push_high_PIN 		GPIO_PIN_6
+
+#define push_low_GPIO 		GPIOI
+#define push_low_PIN 			GPIO_PIN_7
+
 ////////////////////////////////////////////////////////¶ÁÈ¡ÏÞÎ»×´Ì¬
 
 #define pitch_front_state HAL_GPIO_ReadPin(pitch_front_GPIO, pitch_front_PIN)
 #define pitch_back_state 	HAL_GPIO_ReadPin(pitch_back_GPIO, pitch_back_PIN )
 #define yaw_left_state 		HAL_GPIO_ReadPin(yaw_left_GPIO, yaw_left_PIN)
 #define yaw_right_state 	HAL_GPIO_ReadPin(yaw_right_GPIO, yaw_right_PIN)
+#define push_high_state 	HAL_GPIO_ReadPin(push_high_GPIO, push_high_PIN)
 
 void TIM_Freq_Set(TIM_TypeDef* TIMx, uint32_t Freq);
 

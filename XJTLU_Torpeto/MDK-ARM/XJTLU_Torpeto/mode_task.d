@@ -38,6 +38,6 @@ xjtlu_torpeto\mode_task.o: ..\bsp\struct_typedef.h
 xjtlu_torpeto\mode_task.o: ..\applications\remote_control.h
 xjtlu_torpeto\mode_task.o: ..\bsp\bsp_rc.h
 xjtlu_torpeto\mode_task.o: ..\applications\shoot_speed_control.h
-xjtlu_torpeto\mode_task.o: ..\applications\step_motor_task.h
 xjtlu_torpeto\mode_task.o: ..\bsp\bsp_StepMotor.h
+xjtlu_torpeto\mode_task.o: ..\applications\step_motor_task.h
 xjtlu_torpeto\mode_task.o: ..\applications\user_pid.h

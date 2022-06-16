@@ -10,22 +10,22 @@
 #include "CAN_receive.h"
 
 extern motor_measure_t motor_chassis[7];
-extern uint16_t shoot_speed_set;
-extern uint16_t push_speed_set;
+extern fp32 shoot_speed_set;
+extern fp32 push_speed_set;
 
 //摩擦轮1速度环PID
-#define ShootMOTOR1_SPEED_PID_KP 30.0
-#define ShootMOTOR1_SPEED_PID_KI 0.001
-#define ShootMOTOR1_SPEED_PID_KD 0.8
-#define ShootMOTOR1_SPEED_PID_MAX_OUT 16000
-#define ShootMOTOR1_SPEED_PID_MAX_IOUT 2000.0
+#define ShootMOTOR1_SPEED_PID_KP 30.0f
+#define ShootMOTOR1_SPEED_PID_KI 0.001f
+#define ShootMOTOR1_SPEED_PID_KD 0.8f
+#define ShootMOTOR1_SPEED_PID_MAX_OUT 16000.0f
+#define ShootMOTOR1_SPEED_PID_MAX_IOUT 2000.0f
 
 //摩擦轮2速度环PID
-#define ShootMOTOR2_SPEED_PID_KP 30.0
-#define ShootMOTOR2_SPEED_PID_KI 0.001
-#define ShootMOTOR2_SPEED_PID_KD 0.8
-#define ShootMOTOR2_SPEED_PID_MAX_OUT 16000
-#define ShootMOTOR2_SPEED_PID_MAX_IOUT 2000.0
+#define ShootMOTOR2_SPEED_PID_KP 30.0f
+#define ShootMOTOR2_SPEED_PID_KI 0.001f
+#define ShootMOTOR2_SPEED_PID_KD 0.8f
+#define ShootMOTOR2_SPEED_PID_MAX_OUT 16000.0f
+#define ShootMOTOR2_SPEED_PID_MAX_IOUT 2000.0f
 
 //推杆电机位置环PID
 #define PushMotor_GYRO_ABSOLUTE_PID_KP 15.0f
@@ -35,11 +35,11 @@ extern uint16_t push_speed_set;
 #define PushMotor_GYRO_ABSOLUTE_PID_MAX_IOUT 0.0f
 
 //推杆电机速度环PID
-#define PushMotor_SPEED_PID_KP 400.0
-#define PushMotor_SPEED_PID_KI 0.01
-#define PushMotor_SPEED_PID_KD 9
-#define PushMotor_SPEED_PID_MAX_OUT 1000
-#define PushMotor_SPEED_PID_MAX_IOUT 10.0
+#define PushMotor_SPEED_PID_KP 15.0f
+#define PushMotor_SPEED_PID_KI 0.001f
+#define PushMotor_SPEED_PID_KD 0.09f
+#define PushMotor_SPEED_PID_MAX_OUT 2000.0f
+#define PushMotor_SPEED_PID_MAX_IOUT 10.0f
 
 //初始化所有PID的结构体
 void user_pid_Init(void);

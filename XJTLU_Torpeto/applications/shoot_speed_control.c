@@ -1,11 +1,11 @@
 #include "shoot_speed_control.h"
 
-int shoot_speed_set;
-int shoot_last_speed;
+fp32 shoot_speed_set;
+fp32 shoot_last_speed;
 uint8_t shoot_speed_flag = 0;
 
 
-int push_speed_set;
+fp32 push_speed_set;
 
 
 void shoot_speed_limit(void)
@@ -52,7 +52,19 @@ void shoot_motor_speed(void)
 
 void push_motor_speed(void)
 {
-	push_speed_set = rc_ctrl.rc.ch[1]*5;
+	if (rc_ctrl.rc.ch[1] > 20 && push_high_state != 1)
+	{
+		push_speed_set = 17000;
+	}
+	else if (rc_ctrl.rc.ch[1] < -20)
+	{
+		push_speed_set = -17000;
+	}
+	
+	else
+	{
+		push_speed_set = 0;
+	}
 }
 
 

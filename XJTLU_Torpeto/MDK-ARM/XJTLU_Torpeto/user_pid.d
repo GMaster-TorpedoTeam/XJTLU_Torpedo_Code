@@ -40,4 +40,5 @@ xjtlu_torpeto\user_pid.o: ..\components\controller\pid.h
 xjtlu_torpeto\user_pid.o: ..\applications\shoot_speed_control.h
 xjtlu_torpeto\user_pid.o: ..\applications\remote_control.h
 xjtlu_torpeto\user_pid.o: ..\bsp\bsp_rc.h
+xjtlu_torpeto\user_pid.o: ..\bsp\bsp_StepMotor.h
 xjtlu_torpeto\user_pid.o: ..\applications\CAN_receive.h

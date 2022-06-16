@@ -3,6 +3,8 @@
 #include "struct_typedef.h"
 #include "remote_control.h"
 
+#include "bsp_StepMotor.h"
+
 extern RC_ctrl_t rc_ctrl;
 
 void shoot_speed_limit(void);

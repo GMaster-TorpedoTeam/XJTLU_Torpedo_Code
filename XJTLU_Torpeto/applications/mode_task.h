@@ -10,8 +10,8 @@
 #include "user_pid.h"
 
 extern RC_ctrl_t rc_ctrl;
-extern uint16_t shoot_speed_set;
-extern uint16_t push_speed_set;
+extern fp32 shoot_speed_set;
+extern fp32 push_speed_set;
 extern void user_pid_Calc(void);
 
 void mode_choose(void);
