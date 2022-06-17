@@ -63,6 +63,8 @@ void Error_Handler(void);
 #define push_low_GPIO_Port GPIOI
 #define push_high_Pin GPIO_PIN_6
 #define push_high_GPIO_Port GPIOI
+#define Laser_Pin GPIO_PIN_8
+#define Laser_GPIO_Port GPIOC
 #define StepMotor2_pluse_signal_Pin GPIO_PIN_6
 #define StepMotor2_pluse_signal_GPIO_Port GPIOC
 #define StepMotro1_Dir_Pin GPIO_PIN_13

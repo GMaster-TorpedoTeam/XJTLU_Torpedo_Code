@@ -3,7 +3,7 @@
 <title>Static Call Graph - [XJTLU_Torpeto\XJTLU_Torpeto.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image XJTLU_Torpeto\XJTLU_Torpeto.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Jun 16 23:28:22 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Jun 17 14:01:58 2022
 <BR><P>
 <H3>Maximum Stack Usage =        176 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -786,6 +786,7 @@ Global Symbols
 
 <P><STRONG><a name="[c4]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
 <BR><BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_choose
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rc2StepMotor
 </UL>
 
@@ -977,7 +978,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[a9]"></a>HAL_TIM_IRQHandler</STRONG> (Thumb, 358 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = HAL_TIM_IRQHandler &rArr; HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = HAL_TIM_IRQHandler &rArr; HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_TriggerCallback
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_PulseFinishedCallback
@@ -1051,7 +1052,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ad]"></a>HAL_TIM_PeriodElapsedCallback</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, mode_task.o(i.HAL_TIM_PeriodElapsedCallback))
-<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mode_choose
 </UL>
@@ -1109,8 +1110,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[c3]"></a>MX_GPIO_Init</STRONG> (Thumb, 214 bytes, Stack size 48 bytes, gpio.o(i.MX_GPIO_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MX_GPIO_Init &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[c3]"></a>MX_GPIO_Init</STRONG> (Thumb, 254 bytes, Stack size 56 bytes, gpio.o(i.MX_GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = MX_GPIO_Init &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
@@ -1233,7 +1234,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(.text)
 </UL>
 <P><STRONG><a name="[2a]"></a>TIM2_IRQHandler</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.TIM2_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = TIM2_IRQHandler &rArr; HAL_TIM_IRQHandler &rArr; HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = TIM2_IRQHandler &rArr; HAL_TIM_IRQHandler &rArr; HAL_TIM_PeriodElapsedCallback &rArr; mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
@@ -1316,10 +1317,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[bc]"></a>mode_choose</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, mode_task.o(i.mode_choose))
-<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
+<P><STRONG><a name="[bc]"></a>mode_choose</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, mode_task.o(i.mode_choose))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = mode_choose &rArr; rc2StepMotor &rArr; HAL_TIM_PWM_Stop &rArr; TIM_CCxChannelCmd
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_pid_Calc
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_pid_Calc
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_speed_limit
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;push_motor_speed
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rc2StepMotor

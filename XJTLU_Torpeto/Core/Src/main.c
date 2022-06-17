@@ -130,9 +130,6 @@ int main(void)
   {
 		CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, PushMotor.out);
 		HAL_Delay(2);
-		//rc2StepMotor(motor_yaw_TIM);
-		//rc2StepMotor(motor_pitch_TIM);
-		//HAL_Delay(50);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

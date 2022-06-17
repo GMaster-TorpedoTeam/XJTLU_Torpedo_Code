@@ -247,7 +247,7 @@ void TIM2_IRQHandler(void)
 /**
   * @brief This function handles USART3 global interrupt.
   */
-__weak void USART3_IRQHandler(void)
+void __weak USART3_IRQHandler(void)
 {
   /* USER CODE BEGIN USART3_IRQn 0 */
 
