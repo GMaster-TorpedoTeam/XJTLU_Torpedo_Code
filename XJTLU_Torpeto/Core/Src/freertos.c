@@ -128,8 +128,8 @@ void MX_FREERTOS_Init(void) {
   modeTaskHandle = osThreadCreate(osThread(modeTask), NULL);
 	
 	/* definition and creation of shootTask*/
-  osThreadDef(OLEDTask, oled_show_task, osPriorityAboveNormal, 0, 128);
-  OLEDTaskHandle = osThreadCreate(osThread(OLEDTask), NULL);
+  //osThreadDef(OLEDTask, oled_show_task, osPriorityNormal, 0, 128);
+  //OLEDTaskHandle = osThreadCreate(osThread(OLEDTask), NULL);
 	
   /* USER CODE END RTOS_THREADS */
 

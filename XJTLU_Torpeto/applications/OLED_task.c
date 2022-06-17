@@ -10,7 +10,7 @@ void oled_show_task(void const * argument)
 			OLED_ShowFNum(Motor2_Data_row , Motor2_Data_col, motor_chassis[1].speed_rpm);
 	
 			OLED_refresh_gram();
-			osDelay(10);
+			osDelay(2);
     }
 }
 

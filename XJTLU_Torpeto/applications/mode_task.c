@@ -1,7 +1,7 @@
 #include "mode_task.h"
 
 uint8_t shoot_speed_count_flag = 0;
-uint8_t stepmotor_count_flag = 0;
+//uint8_t stepmotor_count_flag = 0;
 
 void mode_choose(void)
 {
@@ -35,9 +35,8 @@ void mode_choose(void)
 		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8, GPIO_PIN_SET);
 	}
 	
-	user_pid_Calc();
 	shoot_speed_count_flag = shoot_speed_count_flag + 1;
-	stepmotor_count_flag = stepmotor_count_flag + 1;
+	//stepmotor_count_flag = stepmotor_count_flag + 1;
 }
 
 /*
