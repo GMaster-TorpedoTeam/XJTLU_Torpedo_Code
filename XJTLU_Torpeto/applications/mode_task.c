@@ -18,6 +18,7 @@ void mode_choose(void)
 		//调整摩擦轮速度
 		shoot_speed_limit();
 		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8, GPIO_PIN_SET);
+		shoot_speed_count_flag = 0;
 	}
 	
 	else if (rc_ctrl.rc.s[1] == 2 && rc_ctrl.rc.s[0] == 3 )
@@ -25,7 +26,6 @@ void mode_choose(void)
 		//调整步进电机
 		rc2StepMotor(motor_yaw_TIM);
 		rc2StepMotor(motor_pitch_TIM);
-		shoot_speed_count_flag = 0;
 		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8, GPIO_PIN_SET);
 	}
 	
@@ -36,15 +36,8 @@ void mode_choose(void)
 	}
 	
 	shoot_speed_count_flag = shoot_speed_count_flag + 1;
-	//stepmotor_count_flag = stepmotor_count_flag + 1;
 }
 
-/*
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-	mode_choose();
-}
-*/
 
 void mode_choose_task(void const * argument)
 {

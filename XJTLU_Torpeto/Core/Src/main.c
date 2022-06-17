@@ -22,7 +22,7 @@
 #include "cmsis_os.h"
 #include "can.h"
 #include "dma.h"
-#include "i2c.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -36,7 +36,7 @@
 #include "bsp_can.h"
 #include "CAN_receive.h"
 #include "user_pid.h"
-#include "OLED.h" 
+#include "oled.h"
 #include "OLED_task.h"
 #include "mode_task.h"
 
@@ -110,13 +110,13 @@ int main(void)
   MX_CAN1_Init();
   MX_TIM1_Init();
   MX_TIM8_Init();
-  MX_I2C2_Init();
+  MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 	
 	remote_control_init();
 	can_filter_init();
 	user_pid_Init();
-	OLED_init();
+	OLED_Init();
 
 
   /* USER CODE END 2 */

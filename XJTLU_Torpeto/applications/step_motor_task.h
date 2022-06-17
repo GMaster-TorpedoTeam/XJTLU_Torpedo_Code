@@ -7,6 +7,10 @@
 
 #include "bsp_StepMotor.h"
 
+extern RC_ctrl_t rc_ctrl;
+extern TIM_HandleTypeDef htim1;
+extern TIM_HandleTypeDef htim8;
+
 void rc2StepMotor(TIM_TypeDef* TIMx);
 
 #endif

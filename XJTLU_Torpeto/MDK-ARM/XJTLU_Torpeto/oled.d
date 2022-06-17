@@ -1,7 +1,5 @@
 xjtlu_torpeto\oled.o: ..\components\devices\OLED.c
-xjtlu_torpeto\oled.o: ..\components\devices\OLED.h
-xjtlu_torpeto\oled.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdint.h
-xjtlu_torpeto\oled.o: ..\components\devices\oledfont.h
+xjtlu_torpeto\oled.o: ..\components\devices\oled.h
 xjtlu_torpeto\oled.o: ../Core/Inc/main.h
 xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 xjtlu_torpeto\oled.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -10,6 +8,7 @@ xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 xjtlu_torpeto\oled.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 xjtlu_torpeto\oled.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 xjtlu_torpeto\oled.o: ../Drivers/CMSIS/Include/core_cm4.h
+xjtlu_torpeto\oled.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdint.h
 xjtlu_torpeto\oled.o: ../Drivers/CMSIS/Include/cmsis_version.h
 xjtlu_torpeto\oled.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 xjtlu_torpeto\oled.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -29,14 +28,14 @@ xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h
 xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
-xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
-xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 xjtlu_torpeto\oled.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-xjtlu_torpeto\oled.o: ../Core/Inc/i2c.h
-xjtlu_torpeto\oled.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdarg.h
-xjtlu_torpeto\oled.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdio.h
+xjtlu_torpeto\oled.o: ../Core/Inc/gpio.h
 xjtlu_torpeto\oled.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdlib.h
+xjtlu_torpeto\oled.o: ..\components\devices\oledfont.h
+xjtlu_torpeto\oled.o: ../Core/Inc/spi.h
+xjtlu_torpeto\oled.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdio.h

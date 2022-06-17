@@ -36,10 +36,9 @@ xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.
 xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
-xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
-xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 xjtlu_torpeto\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -61,4 +60,6 @@ xjtlu_torpeto\freertos.o: ..\applications\shoot_speed_control.h
 xjtlu_torpeto\freertos.o: ..\applications\mode_task.h
 xjtlu_torpeto\freertos.o: ..\applications\OLED_task.h
 xjtlu_torpeto\freertos.o: ..\components\devices\OLED.h
+xjtlu_torpeto\freertos.o: ../Core/Inc/gpio.h
+xjtlu_torpeto\freertos.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdlib.h
 xjtlu_torpeto\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h

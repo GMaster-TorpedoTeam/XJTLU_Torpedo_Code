@@ -6,11 +6,11 @@ void oled_show_task(void const * argument)
 {
   while(1)
     {
-			OLED_ShowFNum(Motor1_Data_row , Motor1_Data_col, motor_chassis[0].speed_rpm);
-			OLED_ShowFNum(Motor2_Data_row , Motor2_Data_col, motor_chassis[1].speed_rpm);
+			OLED_ShowFNum(50, 2, 	motor_chassis[0].speed_rpm, 12);
+			OLED_ShowFNum(50, 16, motor_chassis[1].speed_rpm, 12);
 	
-			OLED_refresh_gram();
-			osDelay(2);
+			OLED_Refresh();
+			osDelay(200);
     }
 }
 
