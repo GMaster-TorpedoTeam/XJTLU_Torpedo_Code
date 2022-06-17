@@ -852,11 +852,11 @@ ARM Macro Assembler    Page 14
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=xjtlu_torpeto\startup_stm32f407xx.d -oxjtlu_torpeto\startup_
-stm32f407xx.o -I.\RTE\_XJTLU_Torpeto -IE:\program\keil\ARM\PACK\ARM\CMSIS\5.7.0
-\CMSIS\Core\Include -IE:\program\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Driver
-s\CMSIS\Device\ST\STM32F4xx\Include --predefine="__UVISION_VERSION SETA 534" --
-predefine="_RTE_ SETA 1" --predefine="STM32F407xx SETA 1" --predefine="_RTE_ SE
-TA 1" --list=startup_stm32f407xx.lst startup_stm32f407xx.s
+stm32f407xx.o -I..\Core\Inc -I.\RTE\_XJTLU_Torpeto -IE:\program\keil\ARM\PACK\A
+RM\CMSIS\5.7.0\CMSIS\Core\Include -IE:\program\keil\ARM\PACK\Keil\STM32F4xx_DFP
+\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --predefine="__UVISION_VERSIO
+N SETA 534" --predefine="_RTE_ SETA 1" --predefine="STM32F407xx SETA 1" --prede
+fine="_RTE_ SETA 1" --list=startup_stm32f407xx.lst startup_stm32f407xx.s
 
 
 

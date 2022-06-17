@@ -1,0 +1,12 @@
+xjtlu_torpeto\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+xjtlu_torpeto\list.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdlib.h
+xjtlu_torpeto\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+xjtlu_torpeto\list.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stddef.h
+xjtlu_torpeto\list.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdint.h
+xjtlu_torpeto\list.o: ../Core/Inc/FreeRTOSConfig.h
+xjtlu_torpeto\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+xjtlu_torpeto\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+xjtlu_torpeto\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+xjtlu_torpeto\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+xjtlu_torpeto\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+xjtlu_torpeto\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

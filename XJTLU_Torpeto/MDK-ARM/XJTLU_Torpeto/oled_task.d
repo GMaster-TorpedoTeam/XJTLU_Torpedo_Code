@@ -38,3 +38,17 @@ xjtlu_torpeto\oled_task.o: ..\bsp\struct_typedef.h
 xjtlu_torpeto\oled_task.o: ../Core/Inc/main.h
 xjtlu_torpeto\oled_task.o: ..\components\devices\OLED.h
 xjtlu_torpeto\oled_task.o: ..\applications\CAN_receive.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+xjtlu_torpeto\oled_task.o: ../Core/Inc/FreeRTOSConfig.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h

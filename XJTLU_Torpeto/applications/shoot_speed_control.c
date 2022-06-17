@@ -68,6 +68,16 @@ void push_motor_speed(void)
 }
 
 
+void shoot_speed_task(void const * argument)
+{
+  while(1)
+    {
+			user_pid_Calc();
+			CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, PushMotor.out);
+			osDelay(2);
+    }
+}
+
 
 
 

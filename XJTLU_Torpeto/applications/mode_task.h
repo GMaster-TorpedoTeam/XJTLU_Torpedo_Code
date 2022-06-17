@@ -16,4 +16,6 @@ extern void user_pid_Calc(void);
 
 void mode_choose(void);
 
+extern void mode_choose_task(void const * argument);
+
 #endif

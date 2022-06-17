@@ -40,8 +40,19 @@ void mode_choose(void)
 	stepmotor_count_flag = stepmotor_count_flag + 1;
 }
 
+/*
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	mode_choose();
+}
+*/
+
+void mode_choose_task(void const * argument)
+{
+  while(1)
+    {
+			mode_choose();
+			osDelay(2);
+    }
 }
 

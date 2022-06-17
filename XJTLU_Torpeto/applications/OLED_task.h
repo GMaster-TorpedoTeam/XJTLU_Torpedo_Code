@@ -7,6 +7,7 @@
 #include "main.h" 
 #include "OLED.h" 
 #include "CAN_receive.h"
+#include "cmsis_os.h"
 
 extern motor_measure_t motor_chassis[7];
 
@@ -19,6 +20,8 @@ extern motor_measure_t motor_chassis[7];
 #define Motor2_Data_row 1
 
 void OLED_Show(void);
+
+extern void oled_show_task(void const * argument);
 
 
 #endif
