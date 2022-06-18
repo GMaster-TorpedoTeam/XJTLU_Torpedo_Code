@@ -56,7 +56,7 @@ void push_motor_speed(void)
 	{
 		push_speed_set = 17000;
 	}
-	else if (rc_ctrl.rc.ch[1] < -20)
+	else if (rc_ctrl.rc.ch[1] < -20 && push_low_state != 1)
 	{
 		push_speed_set = -17000;
 	}

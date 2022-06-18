@@ -7,6 +7,9 @@
 
 #include "bsp_StepMotor.h"
 
+#define Set_Fre 150
+#define RC_DeadZone 30
+
 extern RC_ctrl_t rc_ctrl;
 extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim8;

@@ -10,7 +10,7 @@ void oled_show_task(void const * argument)
 			OLED_ShowFNum(50, 16, motor_chassis[1].speed_rpm, 12);
 	
 			OLED_Refresh();
-			osDelay(200);
+			osDelay(80);
     }
 }
 

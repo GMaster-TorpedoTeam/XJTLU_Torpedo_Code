@@ -54,6 +54,7 @@
 #define yaw_left_state 		HAL_GPIO_ReadPin(yaw_left_GPIO, yaw_left_PIN)
 #define yaw_right_state 	HAL_GPIO_ReadPin(yaw_right_GPIO, yaw_right_PIN)
 #define push_high_state 	HAL_GPIO_ReadPin(push_high_GPIO, push_high_PIN)
+#define push_low_state 		HAL_GPIO_ReadPin(push_low_GPIO, push_low_PIN)
 
 void TIM_Freq_Set(TIM_TypeDef* TIMx, uint32_t Freq);
 
