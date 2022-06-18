@@ -69,4 +69,6 @@ xjtlu_torpeto\main.o: ..\components\devices\oled.h
 xjtlu_torpeto\main.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdlib.h
 xjtlu_torpeto\main.o: ..\applications\OLED_task.h
 xjtlu_torpeto\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+xjtlu_torpeto\main.o: ..\applications\referee.h
+xjtlu_torpeto\main.o: ..\applications\protocol.h
 xjtlu_torpeto\main.o: ..\applications\mode_task.h

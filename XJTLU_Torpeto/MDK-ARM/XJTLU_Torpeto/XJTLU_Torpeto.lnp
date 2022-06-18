@@ -33,6 +33,8 @@
 "xjtlu_torpeto\bsp_rc.o"
 "xjtlu_torpeto\bsp_stepmotor.o"
 "xjtlu_torpeto\bsp_can.o"
+"xjtlu_torpeto\bsp_referee_sent.o"
+"xjtlu_torpeto\bsp_usart.o"
 "xjtlu_torpeto\remote_control.o"
 "xjtlu_torpeto\step_motor_task.o"
 "xjtlu_torpeto\can_receive.o"
@@ -40,6 +42,8 @@
 "xjtlu_torpeto\user_pid.o"
 "xjtlu_torpeto\oled_task.o"
 "xjtlu_torpeto\mode_task.o"
+"xjtlu_torpeto\referee.o"
+"xjtlu_torpeto\referee_usart_task.o"
 "xjtlu_torpeto\pid.o"
 "xjtlu_torpeto\oled.o"
 "xjtlu_torpeto\croutine.o"
@@ -52,6 +56,8 @@
 "xjtlu_torpeto\cmsis_os.o"
 "xjtlu_torpeto\heap_4.o"
 "xjtlu_torpeto\port.o"
+"xjtlu_torpeto\crc8_crc16.o"
+"xjtlu_torpeto\fifo.o"
 --strict --scatter "XJTLU_Torpeto\XJTLU_Torpeto.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

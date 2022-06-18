@@ -30,6 +30,7 @@
 #include "shoot_speed_control.h"
 #include "mode_task.h"
 #include "OLED_task.h"
+#include "referee_usart_task.h"
 
 /* USER CODE END Includes */
 
@@ -130,6 +131,9 @@ void MX_FREERTOS_Init(void) {
 	/* definition and creation of shootTask*/
   osThreadDef(OLEDTask, oled_show_task, osPriorityNormal, 0, 256);
   OLEDTaskHandle = osThreadCreate(osThread(OLEDTask), NULL);
+	
+	osThreadDef(usartTask, referee_usart_task, osPriorityBelowNormal, 0, 256);
+  OLEDTaskHandle = osThreadCreate(osThread(usartTask), NULL);
 	
   /* USER CODE END RTOS_THREADS */
 

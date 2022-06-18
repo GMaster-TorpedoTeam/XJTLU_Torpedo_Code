@@ -53,3 +53,5 @@ xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/ti
 xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 xjtlu_torpeto\oled_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+xjtlu_torpeto\oled_task.o: ..\applications\referee.h
+xjtlu_torpeto\oled_task.o: ..\applications\protocol.h

@@ -475,14 +475,16 @@ void OLED_Init(void)
 	OLED_Clear();
 	
 	//≥ı ºªØOLED“≥√Ê
-	OLED_ShowString(2,2, "Motor1: ",12);
-	OLED_ShowString(2,16,"Motor2: ",12);
-	OLED_ShowString(2,36,"Pitch:  ",12);
-	OLED_ShowString(2,50,"Yaw:	  ",12);
+	OLED_Clear();
+	OLED_ShowString(2,2, "M1: ",12);
+	OLED_ShowString(2,16,"M2: ",12);
+	OLED_ShowString(70,2,"ID: ",12);
+	OLED_ShowString(2,36,"Pitch: ",12);
+	OLED_ShowString(2,50,"Yaw:	 ",12);
 	OLED_DrawLine(0,32,128,32);
 	
-	OLED_ShowFNum(50, 2, 	0.00, 12);
-	OLED_ShowFNum(50, 16, 0.00, 12);
+	OLED_ShowFNum(25, 2, 	0.00, 12);
+	OLED_ShowFNum(25, 16, 0.00, 12);
 	OLED_ShowFNum(50, 36, 0.00, 12);
 	OLED_ShowFNum(50, 50, 0.00, 12);
 	

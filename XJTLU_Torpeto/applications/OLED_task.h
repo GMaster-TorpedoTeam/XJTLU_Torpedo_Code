@@ -8,8 +8,10 @@
 #include "OLED.h" 
 #include "CAN_receive.h"
 #include "cmsis_os.h"
+#include "referee.h"
 
 extern motor_measure_t motor_chassis[7];
+extern ext_game_robot_state_t robot_state;
 
 
 

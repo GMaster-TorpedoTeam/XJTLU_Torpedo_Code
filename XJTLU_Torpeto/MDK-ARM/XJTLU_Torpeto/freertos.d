@@ -63,3 +63,9 @@ xjtlu_torpeto\freertos.o: ..\components\devices\OLED.h
 xjtlu_torpeto\freertos.o: ../Core/Inc/gpio.h
 xjtlu_torpeto\freertos.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdlib.h
 xjtlu_torpeto\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+xjtlu_torpeto\freertos.o: ..\applications\referee.h
+xjtlu_torpeto\freertos.o: ..\applications\protocol.h
+xjtlu_torpeto\freertos.o: ..\applications\referee_usart_task.h
+xjtlu_torpeto\freertos.o: ..\components\support\fifo.h
+xjtlu_torpeto\freertos.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdio.h
+xjtlu_torpeto\freertos.o: E:\program\keil\ARM\ARMCC\Bin\..\include\string.h
