@@ -73,3 +73,4 @@ xjtlu_torpeto\freertos.o: ..\applications\referee_send_task.h
 xjtlu_torpeto\freertos.o: ..\bsp\bsp_referee_sent.h
 xjtlu_torpeto\freertos.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdarg.h
 xjtlu_torpeto\freertos.o: ../Core/Inc/usart.h
+xjtlu_torpeto\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h

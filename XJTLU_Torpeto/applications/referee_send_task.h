@@ -6,6 +6,7 @@
 
 #include "remote_control.h"
 #include "bsp_referee_sent.h"
+#include "cmsis_os.h"
 
 #define referee_state rc_ctrl.rc.s[1]
 

@@ -106,7 +106,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x611A7E0D)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x611A7E0D)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x611A7E0D)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x611A7E0D)
-F (../Core/Src/freertos.c)(0x62ADAD2C)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\bsp -I ..\applications -I ..\components\controller -I ..\components\devices -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\components\support-I.\RTE\_XJTLU_Torpeto-IE:\program\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\program\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o xjtlu_torpeto\freertos.o --omf_browse xjtlu_torpeto\freertos.crf --depend xjtlu_torpeto\freertos.d)
+F (../Core/Src/freertos.c)(0x62ADC53B)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\bsp -I ..\applications -I ..\components\controller -I ..\components\devices -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\components\support-I.\RTE\_XJTLU_Torpeto-IE:\program\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\program\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o xjtlu_torpeto\freertos.o --omf_browse xjtlu_torpeto\freertos.crf --depend xjtlu_torpeto\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x611A7DEE)
 I (E:\program\keil\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
 I (E:\program\keil\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
@@ -173,7 +173,7 @@ I (..\applications\referee_usart_task.h)(0x62ADA098)
 I (..\components\support\fifo.h)(0x62ADA098)
 I (E:\program\keil\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (E:\program\keil\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-I (..\applications\referee_send_task.h)(0x62ADAD4D)
+I (..\applications\referee_send_task.h)(0x62ADC23A)
 I (..\bsp\bsp_referee_sent.h)(0x62ADA098)
 I (E:\program\keil\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
 I (../Core/Inc/usart.h)(0x62ADA097)
@@ -1709,8 +1709,8 @@ I (../Core/Inc/usart.h)(0x62ADA097)
 I (..\components\support\CRC8_CRC16.h)(0x62ADA098)
 I (..\applications\protocol.h)(0x62ADA098)
 I (..\applications\referee.h)(0x62ADA098)
-F (..\applications\referee_send_task.c)(0x62ADAD2C)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\bsp -I ..\applications -I ..\components\controller -I ..\components\devices -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\components\support-I.\RTE\_XJTLU_Torpeto-IE:\program\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\program\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o xjtlu_torpeto\referee_send_task.o --omf_browse xjtlu_torpeto\referee_send_task.crf --depend xjtlu_torpeto\referee_send_task.d)
-I (..\applications\referee_send_task.h)(0x62ADAD4D)
+F (..\applications\referee_send_task.c)(0x62ADC23A)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\bsp -I ..\applications -I ..\components\controller -I ..\components\devices -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\components\support-I.\RTE\_XJTLU_Torpeto-IE:\program\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\program\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o xjtlu_torpeto\referee_send_task.o --omf_browse xjtlu_torpeto\referee_send_task.crf --depend xjtlu_torpeto\referee_send_task.d)
+I (..\applications\referee_send_task.h)(0x62ADC23A)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x611A7E0D)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x62AD4982)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x611A7E0D)
@@ -1752,6 +1752,20 @@ I (../Core/Inc/usart.h)(0x62ADA097)
 I (../Core/Inc/main.h)(0x62AD4982)
 I (..\applications\referee.h)(0x62ADA098)
 I (..\applications\protocol.h)(0x62ADA098)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x611A7DEE)
+I (../Core/Inc/FreeRTOSConfig.h)(0x62AD4981)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x611A7DEE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x611A7DEE)
 F (..\components\controller\pid.c)(0x62AC6B07)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\bsp -I ..\applications -I ..\components\controller -I ..\components\devices -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\components\support-I.\RTE\_XJTLU_Torpeto-IE:\program\keil\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IE:\program\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o xjtlu_torpeto\pid.o --omf_browse xjtlu_torpeto\pid.crf --depend xjtlu_torpeto\pid.d)
 I (..\components\controller\pid.h)(0x62AC6B07)
 I (..\bsp\struct_typedef.h)(0x62ADA098)

@@ -8,5 +8,6 @@ void referee_send_task(void const * argument)
 			{
 				Command_send();
 			}
+			osDelay(35);
     }
 }

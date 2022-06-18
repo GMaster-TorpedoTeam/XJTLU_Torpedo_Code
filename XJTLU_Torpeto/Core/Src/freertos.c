@@ -137,7 +137,7 @@ void MX_FREERTOS_Init(void) {
 	osThreadDef(usartTask, referee_usart_task, osPriorityBelowNormal, 0, 256);
   OLEDTaskHandle = osThreadCreate(osThread(usartTask), NULL);
 	
-	osThreadDef(RefereeSendTask, referee_send_task, osPriorityRealtime, 0, 256);
+	osThreadDef(RefereeSendTask, referee_send_task, osPriorityNormal, 0, 512);
   RefereeSendTaskHandle = osThreadCreate(osThread(RefereeSendTask), NULL);
 	
   /* USER CODE END RTOS_THREADS */
