@@ -31,6 +31,7 @@
 #include "mode_task.h"
 #include "OLED_task.h"
 #include "referee_usart_task.h"
+#include "referee_send_task.h"
 
 /* USER CODE END Includes */
 
@@ -63,6 +64,7 @@ osThreadId defaultTaskHandle;
 osThreadId shootTaskHandle;
 osThreadId modeTaskHandle;
 osThreadId OLEDTaskHandle;
+osThreadId RefereeSendTaskHandle;
 
 /* USER CODE END FunctionPrototypes */
 
@@ -134,6 +136,9 @@ void MX_FREERTOS_Init(void) {
 	
 	osThreadDef(usartTask, referee_usart_task, osPriorityBelowNormal, 0, 256);
   OLEDTaskHandle = osThreadCreate(osThread(usartTask), NULL);
+	
+	osThreadDef(RefereeSendTask, referee_send_task, osPriorityRealtime, 0, 256);
+  RefereeSendTaskHandle = osThreadCreate(osThread(RefereeSendTask), NULL);
 	
   /* USER CODE END RTOS_THREADS */
 

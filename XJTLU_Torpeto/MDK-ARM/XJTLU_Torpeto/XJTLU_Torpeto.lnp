@@ -44,6 +44,7 @@
 "xjtlu_torpeto\mode_task.o"
 "xjtlu_torpeto\referee.o"
 "xjtlu_torpeto\referee_usart_task.o"
+"xjtlu_torpeto\referee_send_task.o"
 "xjtlu_torpeto\pid.o"
 "xjtlu_torpeto\oled.o"
 "xjtlu_torpeto\croutine.o"

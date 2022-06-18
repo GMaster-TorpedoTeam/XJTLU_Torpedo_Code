@@ -990,6 +990,11 @@
               <FileType>1</FileType>
               <FilePath>..\applications\referee_usart_task.c</FilePath>
             </File>
+            <File>
+              <FileName>referee_send_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\referee_send_task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

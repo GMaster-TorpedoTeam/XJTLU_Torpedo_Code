@@ -69,3 +69,7 @@ xjtlu_torpeto\freertos.o: ..\applications\referee_usart_task.h
 xjtlu_torpeto\freertos.o: ..\components\support\fifo.h
 xjtlu_torpeto\freertos.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdio.h
 xjtlu_torpeto\freertos.o: E:\program\keil\ARM\ARMCC\Bin\..\include\string.h
+xjtlu_torpeto\freertos.o: ..\applications\referee_send_task.h
+xjtlu_torpeto\freertos.o: ..\bsp\bsp_referee_sent.h
+xjtlu_torpeto\freertos.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdarg.h
+xjtlu_torpeto\freertos.o: ../Core/Inc/usart.h
