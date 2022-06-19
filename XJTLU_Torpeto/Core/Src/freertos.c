@@ -127,7 +127,7 @@ void MX_FREERTOS_Init(void) {
   shootTaskHandle = osThreadCreate(osThread(shootTask), NULL);
 	
 	/* definition and creation of modeTask*/
-  osThreadDef(modeTask, mode_choose_task, osPriorityLow, 0, 128);
+  osThreadDef(modeTask, mode_choose_task, osPriorityLow, 0, 512);
   modeTaskHandle = osThreadCreate(osThread(modeTask), NULL);
 	
 	/* definition and creation of shootTask*/

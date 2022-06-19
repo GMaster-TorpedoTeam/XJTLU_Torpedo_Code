@@ -9,11 +9,19 @@
 
 #define Set_Fre 150
 #define RC_DeadZone 30
+#define pulse_step 1000
+
 
 extern RC_ctrl_t rc_ctrl;
 extern TIM_HandleTypeDef htim1;
+extern TIM_HandleTypeDef htim3;
+extern TIM_HandleTypeDef htim4;
 extern TIM_HandleTypeDef htim8;
 
+extern uint8_t yaw_PWM_flag;
+extern uint8_t pitch_PWM_flag;
+
 void rc2StepMotor(TIM_TypeDef* TIMx);
+void PWM_Pulse_Control(uint16_t yaw_step,uint16_t pitch_step);
 
 #endif

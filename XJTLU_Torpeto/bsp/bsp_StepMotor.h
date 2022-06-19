@@ -15,6 +15,11 @@
 
 #define motor_yaw_DIR_GPIO 		GPIOE
 #define motor_yaw_DIR_PIN 		GPIO_PIN_13
+#define motor_yaw_Move_Right	GPIO_PIN_SET
+#define motor_yaw_Move_Left		GPIO_PIN_RESET
+
+#define motor_yaw_PWM_Master_TIM_Handle 	htim1
+#define motor_yaw_PWM_Slave_TIM_Handle 	htim3
 
 ///////////////////////////////////////////////////////
 
@@ -26,6 +31,11 @@
 
 #define motor_pitch_DIR_GPIO 		GPIOE
 #define motor_pitch_DIR_PIN 		GPIO_PIN_14
+#define motor_pitch_Move_High		GPIO_PIN_SET
+#define motor_pitch_Move_Low		GPIO_PIN_RESET
+
+#define motor_pitch_PWM_Master_TIM_Handle 	htim8
+#define motor_pitch_PWM_Slave_TIM_Handle 	htim4
 
 ////////////////////////////////////////////////////////限位引脚定义
 
@@ -55,6 +65,12 @@
 #define yaw_right_state 	HAL_GPIO_ReadPin(yaw_right_GPIO, yaw_right_PIN)
 #define push_high_state 	HAL_GPIO_ReadPin(push_high_GPIO, push_high_PIN)
 #define push_low_state 		HAL_GPIO_ReadPin(push_low_GPIO, push_low_PIN)
+
+extern RC_ctrl_t rc_ctrl;
+extern TIM_HandleTypeDef htim1;
+extern TIM_HandleTypeDef htim3;
+extern TIM_HandleTypeDef htim4;
+extern TIM_HandleTypeDef htim8;
 
 void TIM_Freq_Set(TIM_TypeDef* TIMx, uint32_t Freq);
 
