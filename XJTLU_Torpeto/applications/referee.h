@@ -173,6 +173,14 @@ typedef __packed struct
     uint8_t data[32];
 } ext_download_stream_data_t;
 
+typedef __packed struct 
+{ 
+	uint8_t dart_launch_opening_status;
+	uint8_t dart_attack_target;
+	uint16_t target_change_time;
+	uint16_t operate_launch_cmd_time; 
+} ext_dart_client_cmd_t;
+
 
 
 extern void init_referee_struct_data(void);
