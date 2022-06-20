@@ -1,7 +1,6 @@
 #include "mode_task.h"
 
-uint8_t shoot_speed_count_flag = 0;
-//uint8_t stepmotor_count_flag = 0;
+uint16_t shoot_speed_count_flag = 0;
 
 void mode_choose(void)
 {
@@ -13,12 +12,17 @@ void mode_choose(void)
 		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8, GPIO_PIN_RESET);
 	}
 	
-	else if (rc_ctrl.rc.s[1] == 2 && rc_ctrl.rc.s[0] == 1 && shoot_speed_count_flag == 100)
+	else if (rc_ctrl.rc.s[1] == 2 && rc_ctrl.rc.s[0] == 1)
 	{
-		//调整摩擦轮速度
-		shoot_speed_limit();
-		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8, GPIO_PIN_SET);
-		shoot_speed_count_flag = 0;
+		shoot_speed_count_flag++;
+		
+		if(shoot_speed_count_flag == 200)
+		{
+			//调整摩擦轮速度
+			shoot_speed_limit();
+			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8, GPIO_PIN_SET);
+			shoot_speed_count_flag = 0;
+		}
 	}
 	
 	else if (rc_ctrl.rc.s[1] == 2 && rc_ctrl.rc.s[0] == 3 )
@@ -31,11 +35,11 @@ void mode_choose(void)
 	
 	else if(rc_ctrl.rc.s[1] == 2 && rc_ctrl.rc.s[0] == 2)
 	{
+		//丝杆推进
 		push_motor_speed();
 		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8, GPIO_PIN_SET);
 	}
 	
-	shoot_speed_count_flag = shoot_speed_count_flag + 1;
 }
 
 
@@ -47,4 +51,5 @@ void mode_choose_task(void const * argument)
 			osDelay(2);
     }
 }
+
 

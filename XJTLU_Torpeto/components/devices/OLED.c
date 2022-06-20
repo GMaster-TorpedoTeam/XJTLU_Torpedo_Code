@@ -484,10 +484,6 @@ void OLED_Init(void)
 	OLED_ShowString(2,50,"Yaw:	 ",12);
 	OLED_DrawLine(0,32,128,32);
 	
-	OLED_ShowFNum(25, 2, 	0.00, 12);
-	OLED_ShowFNum(25, 16, 0.00, 12);
-	OLED_ShowFNum(50, 36, 0.00, 12);
-	OLED_ShowFNum(50, 50, 0.00, 12);
 	
 	OLED_Refresh();
 }

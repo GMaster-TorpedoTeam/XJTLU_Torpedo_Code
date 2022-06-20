@@ -32,6 +32,7 @@
 #include "OLED_task.h"
 #include "referee_usart_task.h"
 #include "referee_send_task.h"
+#include "StepMotor_position_reset_task.h"
 
 /* USER CODE END Includes */
 
@@ -65,6 +66,7 @@ osThreadId shootTaskHandle;
 osThreadId modeTaskHandle;
 osThreadId OLEDTaskHandle;
 osThreadId RefereeSendTaskHandle;
+osThreadId PositionResetTaskHandle;
 
 /* USER CODE END FunctionPrototypes */
 
@@ -139,6 +141,9 @@ void MX_FREERTOS_Init(void) {
 	
 	osThreadDef(RefereeSendTask, referee_send_task, osPriorityNormal, 0, 512);
   RefereeSendTaskHandle = osThreadCreate(osThread(RefereeSendTask), NULL);
+	
+	osThreadDef(PositionResetTask, step_motor_reset_task, osPriorityNormal, 0, 128);
+  PositionResetTaskHandle = osThreadCreate(osThread(PositionResetTask), NULL);
 	
   /* USER CODE END RTOS_THREADS */
 
