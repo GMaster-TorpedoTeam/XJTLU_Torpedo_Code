@@ -475,6 +475,7 @@ void OLED_Init(void)
 	OLED_Clear();
 	
 	//≥ı ºªØOLED“≥√Ê
+	OLED_DisplayTurn(1);
 	OLED_Clear();
 	OLED_ShowString(2,2, "M1: ",12);
 	OLED_ShowString(2,16,"M2: ",12);

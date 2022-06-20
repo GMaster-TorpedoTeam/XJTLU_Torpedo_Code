@@ -122,6 +122,14 @@ int main(void)
 	can_filter_init();
 	user_pid_Init();
 	OLED_Init();
+	
+	HAL_TIM_Base_Start_IT(&motor_yaw_PWM_Slave_TIM_Handle);
+  //HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_2);
+  __HAL_TIM_SET_AUTORELOAD(&motor_yaw_PWM_Slave_TIM_Handle, 0);
+	
+		HAL_TIM_Base_Start_IT(&motor_pitch_PWM_Slave_TIM_Handle);
+  //HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_2);
+  __HAL_TIM_SET_AUTORELOAD(&motor_pitch_PWM_Slave_TIM_Handle, 0);
 
 
   /* USER CODE END 2 */
@@ -198,7 +206,7 @@ void SystemClock_Config(void)
   * @param  htim : TIM handle
   * @retval None
   */
-void __weak HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+__weak void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   /* USER CODE BEGIN Callback 0 */
 

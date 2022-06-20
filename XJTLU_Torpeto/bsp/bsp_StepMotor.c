@@ -27,7 +27,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     }
 		
 		if(htim == (&motor_pitch_PWM_Slave_TIM_Handle))
-    {
+			{
         if(__HAL_TIM_GET_FLAG(&motor_pitch_PWM_Slave_TIM_Handle, TIM_FLAG_CC1) != RESET)
         {
             __HAL_TIM_CLEAR_FLAG(&motor_pitch_PWM_Slave_TIM_Handle, TIM_FLAG_CC1);

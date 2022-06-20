@@ -12,6 +12,8 @@
 
 extern motor_measure_t motor_chassis[7];
 extern ext_game_robot_state_t robot_state;
+extern int yaw_position;
+extern int pitch_position;
 
 
 

@@ -241,7 +241,7 @@ void TIM4_IRQHandler(void)
 /**
   * @brief This function handles USART3 global interrupt.
   */
-void __weak USART3_IRQHandler(void)
+__weak void USART3_IRQHandler(void)
 {
   /* USER CODE BEGIN USART3_IRQn 0 */
 
@@ -283,7 +283,7 @@ void DMA2_Stream6_IRQHandler(void)
 /**
   * @brief This function handles USART6 global interrupt.
   */
-void __weak USART6_IRQHandler(void)
+__weak void USART6_IRQHandler(void)
 {
   /* USER CODE BEGIN USART6_IRQn 0 */
 
