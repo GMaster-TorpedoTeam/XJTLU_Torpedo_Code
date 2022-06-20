@@ -76,3 +76,5 @@ xjtlu_torpeto\freertos.o: ../Core/Inc/usart.h
 xjtlu_torpeto\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 xjtlu_torpeto\freertos.o: ..\applications\StepMotor_position_reset_task.h
 xjtlu_torpeto\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+xjtlu_torpeto\freertos.o: ..\applications\competition_mode_task.h
+xjtlu_torpeto\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h

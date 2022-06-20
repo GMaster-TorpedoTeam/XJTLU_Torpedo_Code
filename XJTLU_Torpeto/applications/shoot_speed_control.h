@@ -14,6 +14,8 @@ extern pid_type_def ShootMotor1;
 extern pid_type_def ShootMotor2;
 extern pid_type_def PushMotor;
 
+extern motor_measure_t motor_chassis[7];
+
 void shoot_speed_limit(void);
 void shoot_motor_speed(void);
 

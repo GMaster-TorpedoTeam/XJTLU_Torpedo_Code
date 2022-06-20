@@ -30,15 +30,15 @@ extern fp32 push_speed_set;
 //推杆电机位置环PID
 #define PushMotor_GYRO_ABSOLUTE_PID_KP 15.0f
 #define PushMotor_GYRO_ABSOLUTE_PID_KI 0.0f
-#define PushMotor_GYRO_ABSOLUTE_PID_KD -0.7f
-#define PushMotor_GYRO_ABSOLUTE_PID_MAX_OUT 10.0f
+#define PushMotor_GYRO_ABSOLUTE_PID_KD 0.7f
+#define PushMotor_GYRO_ABSOLUTE_PID_MAX_OUT 5500.0f
 #define PushMotor_GYRO_ABSOLUTE_PID_MAX_IOUT 0.0f
 
 //推杆电机速度环PID
 #define PushMotor_SPEED_PID_KP 15.0f
 #define PushMotor_SPEED_PID_KI 0.001f
 #define PushMotor_SPEED_PID_KD 0.09f
-#define PushMotor_SPEED_PID_MAX_OUT 2000.0f
+#define PushMotor_SPEED_PID_MAX_OUT 17000.0f
 #define PushMotor_SPEED_PID_MAX_IOUT 10.0f
 
 //初始化所有PID的结构体

@@ -22,7 +22,7 @@ void shoot_speed_limit(void)
 	{
 		if (shoot_speed_flag == 0)
 		{
-			shoot_speed_set =8000;
+			shoot_speed_set =1000;
 			shoot_speed_flag = 1;
 		}
 		else if (shoot_speed_flag == 1)
@@ -68,12 +68,17 @@ void push_motor_speed(void)
 }
 
 
+
 void shoot_speed_task(void const * argument)
 {
   while(1)
     {
-			user_pid_Calc();
-			CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, PushMotor.out);
+			if (rc_ctrl.rc.s[1] != 1 )
+			{
+				user_pid_Calc();
+				CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, PushMotor.out);				
+			}
+			
 			osDelay(2);
     }
 }

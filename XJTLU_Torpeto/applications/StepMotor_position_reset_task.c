@@ -2,6 +2,8 @@
 
 uint8_t StepMotor_reset_flag = 0;
 
+
+//两边拨杆拨中，遥杆\/进行步进电机位置重置
 void step_motor_reset_task(void const * argument)
 {
   while(1)
@@ -11,7 +13,7 @@ void step_motor_reset_task(void const * argument)
 	{
 		StepMotor_reset_flag++;
 		
-		if (StepMotor_reset_flag == 4)
+		if (StepMotor_reset_flag == 5)
 			{
 				yaw_position = 0;
 				pitch_position = 0;

@@ -62,8 +62,6 @@
 
 extern RC_ctrl_t rc_ctrl;
 extern motor_measure_t motor_chassis[7];
-uint8_t a;
-uint8_t b;
 
 /* USER CODE END PV */
 

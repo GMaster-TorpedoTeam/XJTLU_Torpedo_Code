@@ -317,7 +317,7 @@ void OLED_ShowNum(uint8_t x,uint8_t y,uint32_t num,uint8_t len,uint8_t size1)
 void OLED_ShowFNum(uint8_t x,uint8_t y,float Fnum,uint8_t size1)
 {
 	//uint8_t Data[]= " ";                       创建目标数组，用来存放转换后的字符数据 
-  sprintf((char*)Data,"%.3f",Fnum);                 //保留小数点后3位小数，打印到Data数组中
+  sprintf((char*)Data,"%.2f",Fnum);                 //保留小数点后3位小数，打印到Data数组中
 	OLED_ShowString(x,y,Data,size1);           //调用OLED字符串显示函数，在OLED屏上显示
 }
 
@@ -479,7 +479,7 @@ void OLED_Init(void)
 	OLED_Clear();
 	OLED_ShowString(2,2, "M1: ",12);
 	OLED_ShowString(2,16,"M2: ",12);
-	OLED_ShowString(70,2,"ID: ",12);
+	OLED_ShowString(80,2,"ID: ",12);
 	OLED_ShowString(2,36,"Pitch: ",12);
 	OLED_ShowString(2,50,"Yaw:	 ",12);
 	OLED_DrawLine(0,32,128,32);

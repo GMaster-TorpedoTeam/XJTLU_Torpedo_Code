@@ -1000,6 +1000,11 @@
               <FileType>1</FileType>
               <FilePath>..\applications\StepMotor_position_reset_task.c</FilePath>
             </File>
+            <File>
+              <FileName>competition_mode_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\competition_mode_task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

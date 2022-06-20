@@ -13,12 +13,24 @@ pid_type_def ShootMotor2;
 fp32 PushMotorPID[3] = {PushMotor_SPEED_PID_KP, PushMotor_SPEED_PID_KI, PushMotor_SPEED_PID_KD};
 pid_type_def PushMotor;
 
+//一键发射模式下推杆电机位置环PID参数和结构体
+fp32 C_PushMotor_GYRO_PID[3] = {PushMotor_GYRO_ABSOLUTE_PID_KP, PushMotor_GYRO_ABSOLUTE_PID_KI, 
+PushMotor_GYRO_ABSOLUTE_PID_KD};
+pid_type_def C_PushMotor_GYRO;
+
+//一键发射模式下推杆电机速度环PID参数和结构体
+fp32 C_PushMotor_SPEED_PID[3] = {PushMotor_SPEED_PID_KP, PushMotor_SPEED_PID_KI, PushMotor_SPEED_PID_KD};
+pid_type_def C_PushMotor_SPEED;
+
+
 
 void user_pid_Init(void)
 {
 	PID_init(&ShootMotor1, PID_POSITION, ShootMotor1PID, ShootMOTOR1_SPEED_PID_MAX_OUT, ShootMOTOR1_SPEED_PID_MAX_IOUT);
 	PID_init(&ShootMotor2, PID_POSITION, ShootMotor2PID, ShootMOTOR2_SPEED_PID_MAX_OUT, ShootMOTOR2_SPEED_PID_MAX_IOUT);
 	PID_init(&PushMotor, PID_POSITION, PushMotorPID, PushMotor_SPEED_PID_MAX_OUT, PushMotor_SPEED_PID_MAX_IOUT);
+	PID_init(&C_PushMotor_GYRO, PID_POSITION, C_PushMotor_GYRO_PID, PushMotor_GYRO_ABSOLUTE_PID_MAX_OUT, PushMotor_SPEED_PID_MAX_IOUT);
+	PID_init(&C_PushMotor_SPEED, PID_POSITION, C_PushMotor_SPEED_PID, PushMotor_SPEED_PID_MAX_OUT, PushMotor_SPEED_PID_MAX_IOUT);
 }
 
 
