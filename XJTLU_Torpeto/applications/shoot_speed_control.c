@@ -22,7 +22,7 @@ void shoot_speed_limit(void)
 	{
 		if (shoot_speed_flag == 0)
 		{
-			shoot_speed_set =1000;
+			shoot_speed_set =8000;
 			shoot_speed_flag = 1;
 		}
 		else if (shoot_speed_flag == 1)

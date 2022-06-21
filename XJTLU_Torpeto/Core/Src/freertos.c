@@ -34,6 +34,8 @@
 #include "referee_send_task.h"
 #include "StepMotor_position_reset_task.h"
 #include "competition_mode_task.h"
+#include "choose_torpedo_task.h"
+#include "position_adjust_task.h"
 
 /* USER CODE END Includes */
 
@@ -69,6 +71,8 @@ osThreadId OLEDTaskHandle;
 osThreadId RefereeSendTaskHandle;
 osThreadId PositionResetTaskHandle;
 osThreadId CompetitionTaskHandle;
+osThreadId chooseTorpedoTaskHandle;
+osThreadId PositionAdjustTaskHandle;
 
 /* USER CODE END FunctionPrototypes */
 
@@ -149,6 +153,12 @@ void MX_FREERTOS_Init(void) {
 	
 	osThreadDef(CompetitionTask, competition_mode_task, osPriorityAboveNormal, 0, 256);
   CompetitionTaskHandle = osThreadCreate(osThread(CompetitionTask), NULL);
+	
+	osThreadDef(chooseTorpedoTask, choose_task, osPriorityNormal, 0, 128);
+  chooseTorpedoTaskHandle = osThreadCreate(osThread(chooseTorpedoTask), NULL);
+	
+	osThreadDef(PositionAdjustTask, adjust_task, osPriorityNormal, 0, 128);
+  PositionAdjustTaskHandle = osThreadCreate(osThread(PositionAdjustTask), NULL);
 	
   /* USER CODE END RTOS_THREADS */
 

@@ -39,6 +39,7 @@
 #include "oled.h"
 #include "OLED_task.h"
 #include "mode_task.h"
+#include "Torpedo_data.h"
 
 /* USER CODE END Includes */
 
@@ -120,13 +121,12 @@ int main(void)
 	can_filter_init();
 	user_pid_Init();
 	OLED_Init();
+	Torpedo_data_Init();
 	
 	HAL_TIM_Base_Start_IT(&motor_yaw_PWM_Slave_TIM_Handle);
-  //HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_2);
   __HAL_TIM_SET_AUTORELOAD(&motor_yaw_PWM_Slave_TIM_Handle, 0);
 	
 		HAL_TIM_Base_Start_IT(&motor_pitch_PWM_Slave_TIM_Handle);
-  //HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_2);
   __HAL_TIM_SET_AUTORELOAD(&motor_pitch_PWM_Slave_TIM_Handle, 0);
 
 

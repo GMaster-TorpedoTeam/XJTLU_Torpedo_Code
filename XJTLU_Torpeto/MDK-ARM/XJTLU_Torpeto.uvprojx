@@ -1005,6 +1005,21 @@
               <FileType>1</FileType>
               <FilePath>..\applications\competition_mode_task.c</FilePath>
             </File>
+            <File>
+              <FileName>choose_torpedo_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\choose_torpedo_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>Torpedo_data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\Torpedo_data.c</FilePath>
+            </File>
+            <File>
+              <FileName>position_adjust_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\position_adjust_task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
