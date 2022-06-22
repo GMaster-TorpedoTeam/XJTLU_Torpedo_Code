@@ -5,8 +5,8 @@
 #include "struct_typedef.h"
 
 ///////Ò»ºÅ·ÉïÚ²ÎÊı//////
-#define Torpedo1_pitch 	0
-#define Torpedo1_yaw 		0
+#define Torpedo1_pitch 	80
+#define Torpedo1_yaw 		-150
 //#define Torpedo1_round 	1
 #define Torpedo1_rank 	1
 

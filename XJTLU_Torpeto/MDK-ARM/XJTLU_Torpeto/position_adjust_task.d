@@ -49,3 +49,7 @@ xjtlu_torpeto\position_adjust_task.o: ../Middlewares/Third_Party/FreeRTOS/Source
 xjtlu_torpeto\position_adjust_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 xjtlu_torpeto\position_adjust_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 xjtlu_torpeto\position_adjust_task.o: ..\applications\Torpedo_data.h
+xjtlu_torpeto\position_adjust_task.o: ..\bsp\bsp_StepMotor.h
+xjtlu_torpeto\position_adjust_task.o: ..\applications\remote_control.h
+xjtlu_torpeto\position_adjust_task.o: ..\bsp\bsp_rc.h
+xjtlu_torpeto\position_adjust_task.o: ..\applications\step_motor_task.h

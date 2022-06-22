@@ -14,6 +14,7 @@
 extern RC_ctrl_t rc_ctrl;
 extern pid_type_def C_PushMotor_GYRO;
 extern pid_type_def C_PushMotor_SPEED;
+extern uint8_t choose_flag;
 
 extern void competition_mode_task(void const * argument);
 
