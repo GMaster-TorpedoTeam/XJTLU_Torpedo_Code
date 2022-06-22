@@ -12,11 +12,11 @@ void oled_show_task(void const * argument)
 			
 			if(robot_state.robot_id == 8)
 			{
-				OLED_ShowString(100,2, "red",12);
+				OLED_ShowString(90,2, "red",12);
 			}
 			else if (robot_state.robot_id == 108)
 			{
-				OLED_ShowString(100,2, "blue",12);
+				OLED_ShowString(900,2, "blue",12);
 			}			
 			OLED_ShowFNum(50, 36, pitch_position, 12);
 			OLED_ShowFNum(50, 50, yaw_position, 12);

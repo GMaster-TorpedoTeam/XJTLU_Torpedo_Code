@@ -65,11 +65,12 @@ xjtlu_torpeto\main.o: ..\components\controller\pid.h
 xjtlu_torpeto\main.o: ..\applications\shoot_speed_control.h
 xjtlu_torpeto\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 xjtlu_torpeto\main.o: ..\applications\user_pid.h
+xjtlu_torpeto\main.o: ..\applications\competion_step_motor_task.h
+xjtlu_torpeto\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+xjtlu_torpeto\main.o: ..\applications\competition_shoot_task.h
+xjtlu_torpeto\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 xjtlu_torpeto\main.o: ..\components\devices\oled.h
 xjtlu_torpeto\main.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdlib.h
 xjtlu_torpeto\main.o: ..\applications\OLED_task.h
-xjtlu_torpeto\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
-xjtlu_torpeto\main.o: ..\applications\referee.h
-xjtlu_torpeto\main.o: ..\applications\protocol.h
 xjtlu_torpeto\main.o: ..\applications\mode_task.h
 xjtlu_torpeto\main.o: ..\applications\Torpedo_data.h

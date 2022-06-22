@@ -8,10 +8,12 @@
 #include "pid.h"
 #include "shoot_speed_control.h"
 #include "CAN_receive.h"
+#include "competion_step_motor_task.h"
 
 extern motor_measure_t motor_chassis[7];
 extern fp32 shoot_speed_set;
 extern fp32 push_speed_set;
+extern fp32 c_step_motor_speed;
 
 //Ä¦²ÁÂÖ1ËÙ¶È»·PID
 #define ShootMOTOR1_SPEED_PID_KP 30.0f

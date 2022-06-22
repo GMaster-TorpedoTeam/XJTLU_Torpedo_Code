@@ -1,7 +1,6 @@
-#include "competition_shoot_task.h"
+ #include "competition_shoot_task.h"  
 
 uint8_t c_shoot_flag = 0;
-fp32 c_shoot_motor_speed;
 uint8_t c_shoot_report = 0;
 uint16_t shoot_delay_flag = 0;
 
@@ -17,11 +16,11 @@ void c_shoot_task(void const * argument)
 			
 			if (c_shoot_flag == 0)
 			{
-				c_shoot_motor_speed = 0;
+				shoot_speed_set = 0;
 			}
 			else if(c_shoot_flag == 1)
 			{
-				c_shoot_motor_speed = shoot_speed;
+				shoot_speed_set = shoot_speed;
 				
 				shoot_delay_flag++;
 				if (shoot_delay_flag == 300)

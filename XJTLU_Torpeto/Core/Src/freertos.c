@@ -37,12 +37,14 @@
 #include "choose_torpedo_task.h"
 #include "position_adjust_task.h"
 #include "competition_shoot_task.h"
+#include "competion_step_motor_task.h"
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
+extern void oled_show_task(void const * argument);
 extern void mode_choose_task(void const * argument);
 extern void c_shoot_task(void const * argument);
 
@@ -76,6 +78,7 @@ osThreadId CompetitionTaskHandle;
 osThreadId chooseTorpedoTaskHandle;
 osThreadId PositionAdjustTaskHandle;
 osThreadId CompetitionShootTaskHandle;
+osThreadId C_StepShootTaskHandle;
 
 /* USER CODE END FunctionPrototypes */
 
@@ -154,7 +157,7 @@ void MX_FREERTOS_Init(void) {
 	osThreadDef(PositionResetTask, step_motor_reset_task, osPriorityNormal, 0, 128);
   PositionResetTaskHandle = osThreadCreate(osThread(PositionResetTask), NULL);
 	
-	osThreadDef(CompetitionTask, competition_mode_task, osPriorityAboveNormal, 0, 256);
+	osThreadDef(CompetitionTask, competition_mode_task, osPriorityNormal, 0, 128);
   CompetitionTaskHandle = osThreadCreate(osThread(CompetitionTask), NULL);
 	
 	osThreadDef(chooseTorpedoTask, choose_task, osPriorityNormal, 0, 128);
@@ -165,6 +168,9 @@ void MX_FREERTOS_Init(void) {
 	
 	osThreadDef(CompetitionShootTask, c_shoot_task, osPriorityNormal, 0, 128);
   CompetitionShootTaskHandle = osThreadCreate(osThread(CompetitionShootTask), NULL);
+	
+	osThreadDef(C_StepShootTask, c_step_task, osPriorityAboveNormal, 0, 256);
+  C_StepShootTaskHandle = osThreadCreate(osThread(C_StepShootTask), NULL);
 	
   /* USER CODE END RTOS_THREADS */
 

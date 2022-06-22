@@ -58,4 +58,8 @@ xjtlu_torpeto\competition_mode_task.o: ..\bsp\bsp_StepMotor.h
 xjtlu_torpeto\competition_mode_task.o: ..\applications\CAN_receive.h
 xjtlu_torpeto\competition_mode_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 xjtlu_torpeto\competition_mode_task.o: ..\applications\user_pid.h
+xjtlu_torpeto\competition_mode_task.o: ..\applications\competion_step_motor_task.h
+xjtlu_torpeto\competition_mode_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+xjtlu_torpeto\competition_mode_task.o: ..\applications\competition_shoot_task.h
+xjtlu_torpeto\competition_mode_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 xjtlu_torpeto\competition_mode_task.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdlib.h

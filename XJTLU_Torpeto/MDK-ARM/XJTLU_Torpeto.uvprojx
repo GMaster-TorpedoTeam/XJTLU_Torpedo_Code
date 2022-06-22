@@ -1025,6 +1025,11 @@
               <FileType>1</FileType>
               <FilePath>..\applications\competition_shoot_task.c</FilePath>
             </File>
+            <File>
+              <FileName>competion_step_motor_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\competion_step_motor_task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

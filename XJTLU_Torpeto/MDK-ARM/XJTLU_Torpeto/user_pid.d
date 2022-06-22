@@ -56,3 +56,7 @@ xjtlu_torpeto\user_pid.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/que
 xjtlu_torpeto\user_pid.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 xjtlu_torpeto\user_pid.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 xjtlu_torpeto\user_pid.o: ..\applications\user_pid.h
+xjtlu_torpeto\user_pid.o: ..\applications\competion_step_motor_task.h
+xjtlu_torpeto\user_pid.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+xjtlu_torpeto\user_pid.o: ..\applications\competition_shoot_task.h
+xjtlu_torpeto\user_pid.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h

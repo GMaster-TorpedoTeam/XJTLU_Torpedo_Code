@@ -479,7 +479,7 @@ void OLED_Init(void)
 	OLED_Clear();
 	OLED_ShowString(2,2, "M1: ",12);
 	OLED_ShowString(2,16,"M2: ",12);
-	OLED_ShowString(80,2,"ID: ",12);
+	OLED_ShowString(70,2,"ID: ",12);
 	OLED_ShowString(2,36,"Pitch: ",12);
 	OLED_ShowString(2,50,"Yaw:	 ",12);
 	OLED_DrawLine(0,32,128,32);

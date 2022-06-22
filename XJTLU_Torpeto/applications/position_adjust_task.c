@@ -25,13 +25,15 @@ void adjust_task(void const * argument)
 				yaw_target		= torpedo_data[torpedo_num].yaw;
 				temp_pitch 	= pitch_target - pitch_position;
 				temp_yaw		=	yaw_target - yaw_position;
+				TIM_Freq_Set(motor_pitch_TIM, 80);
+				TIM_Freq_Set(motor_yaw_TIM, 80);
 				
-				if(temp_pitch > 1)
+				if(temp_pitch > 0)
 				{
 					HAL_GPIO_WritePin(motor_pitch_DIR_GPIO, motor_pitch_DIR_PIN, motor_pitch_Move_High);
 					PWM_Pulse_Control(motor_pitch_TIM, pulse_step,pulse_step);
 				}
-				else if (temp_pitch < 1)
+				else if (temp_pitch < 0)
 				{
 					HAL_GPIO_WritePin(motor_pitch_DIR_GPIO, motor_pitch_DIR_PIN, motor_pitch_Move_Low);
 					PWM_Pulse_Control(motor_pitch_TIM, pulse_step,pulse_step);
@@ -41,12 +43,12 @@ void adjust_task(void const * argument)
 					pitch_finish_flag = 1;
 				}
 				
-				if (temp_yaw > 1)
+				if (temp_yaw > 0)
 				{
 					HAL_GPIO_WritePin(motor_yaw_DIR_GPIO, motor_yaw_DIR_PIN, motor_yaw_Move_Right);
 					PWM_Pulse_Control(motor_yaw_TIM, pulse_step,pulse_step);
 				}
-				else if(temp_yaw < 1)
+				else if(temp_yaw < 0)
 				{
 					HAL_GPIO_WritePin(motor_yaw_DIR_GPIO, motor_yaw_DIR_PIN, motor_yaw_Move_Left);
 					PWM_Pulse_Control(motor_yaw_TIM, pulse_step,pulse_step);

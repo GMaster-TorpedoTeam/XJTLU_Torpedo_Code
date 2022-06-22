@@ -7,10 +7,11 @@
 #include "cmsis_os.h"
 #include "remote_control.h"
 
-#define shoot_speed 8000
+#define shoot_speed 1000
 
 extern RC_ctrl_t rc_ctrl;
 extern uint8_t adjust_flag;
+extern fp32 shoot_speed_set;
 
 extern void c_shoot_task(void const * argument);
 

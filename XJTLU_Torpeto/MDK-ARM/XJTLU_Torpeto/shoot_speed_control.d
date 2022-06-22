@@ -56,3 +56,8 @@ xjtlu_torpeto\shoot_speed_control.o: ../Middlewares/Third_Party/FreeRTOS/Source/
 xjtlu_torpeto\shoot_speed_control.o: ..\applications\user_pid.h
 xjtlu_torpeto\shoot_speed_control.o: ../Core/Inc/main.h
 xjtlu_torpeto\shoot_speed_control.o: ..\applications\shoot_speed_control.h
+xjtlu_torpeto\shoot_speed_control.o: ..\applications\competion_step_motor_task.h
+xjtlu_torpeto\shoot_speed_control.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+xjtlu_torpeto\shoot_speed_control.o: ..\applications\user_pid.h
+xjtlu_torpeto\shoot_speed_control.o: ..\applications\competition_shoot_task.h
+xjtlu_torpeto\shoot_speed_control.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
