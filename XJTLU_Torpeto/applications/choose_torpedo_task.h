@@ -6,6 +6,7 @@
 
 #include "cmsis_os.h"
 
+extern uint8_t finish_flag;
 
 extern void choose_task(void const * argument);
 

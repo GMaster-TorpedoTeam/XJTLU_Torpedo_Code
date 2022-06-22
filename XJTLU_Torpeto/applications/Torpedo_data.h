@@ -11,20 +11,20 @@
 #define Torpedo1_rank 	1
 
 ///////二号飞镖参数//////
-#define Torpedo2_pitch 	0
-#define Torpedo2_yaw 		0
+#define Torpedo2_pitch 	-40
+#define Torpedo2_yaw 		10
 //#define Torpedo2_round 	1
 #define Torpedo2_rank 	2
 
 ///////三号飞镖参数//////
-#define Torpedo3_pitch 	0
-#define Torpedo3_yaw 		0
+#define Torpedo3_pitch 	34
+#define Torpedo3_yaw 		-43
 //#define Torpedo3_round 	1
 #define Torpedo3_rank 	3
 
 ///////四号飞镖参数//////
-#define Torpedo4_pitch 	0
-#define Torpedo4_yaw 		0
+#define Torpedo4_pitch 	-15
+#define Torpedo4_yaw 		110
 //#define Torpedo4_round 	1
 #define Torpedo4_rank 	4
 

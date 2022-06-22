@@ -3,7 +3,6 @@
 uint8_t choose_flag = 0;
 uint8_t counter = 0;
 uint8_t torpedo_num;
-uint8_t finish_flag = 0;
 
 void choose_task(void const * argument)
 {

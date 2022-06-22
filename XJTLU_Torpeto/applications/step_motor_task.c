@@ -5,8 +5,6 @@ int pitch_position = 0;
 
 void rc2StepMotor(TIM_TypeDef* TIMx)
 {
-	TIM_Freq_Set(motor_pitch_TIM, 150);
-	TIM_Freq_Set(motor_yaw_TIM, 150);
 	
 	if (TIMx == motor_yaw_TIM)
 	{

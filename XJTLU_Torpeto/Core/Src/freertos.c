@@ -38,6 +38,7 @@
 #include "position_adjust_task.h"
 #include "competition_shoot_task.h"
 #include "competion_step_motor_task.h"
+#include "abort_end_task.h"
 
 /* USER CODE END Includes */
 
@@ -79,6 +80,7 @@ osThreadId chooseTorpedoTaskHandle;
 osThreadId PositionAdjustTaskHandle;
 osThreadId CompetitionShootTaskHandle;
 osThreadId C_StepShootTaskHandle;
+osThreadId AbortEndTaskHandle;
 
 /* USER CODE END FunctionPrototypes */
 
@@ -171,6 +173,9 @@ void MX_FREERTOS_Init(void) {
 	
 	osThreadDef(C_StepShootTask, c_step_task, osPriorityAboveNormal, 0, 256);
   C_StepShootTaskHandle = osThreadCreate(osThread(C_StepShootTask), NULL);
+	
+	osThreadDef(AbortEndTask, abort_end_task, osPriorityNormal, 0, 128);
+  AbortEndTaskHandle = osThreadCreate(osThread(AbortEndTask), NULL);
 	
   /* USER CODE END RTOS_THREADS */
 

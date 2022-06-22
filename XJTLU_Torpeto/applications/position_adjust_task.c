@@ -25,8 +25,6 @@ void adjust_task(void const * argument)
 				yaw_target		= torpedo_data[torpedo_num].yaw;
 				temp_pitch 	= pitch_target - pitch_position;
 				temp_yaw		=	yaw_target - yaw_position;
-				TIM_Freq_Set(motor_pitch_TIM, 80);
-				TIM_Freq_Set(motor_yaw_TIM, 80);
 				
 				if(temp_pitch > 0)
 				{

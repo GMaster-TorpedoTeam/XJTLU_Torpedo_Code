@@ -1030,6 +1030,11 @@
               <FileType>1</FileType>
               <FilePath>..\applications\competion_step_motor_task.c</FilePath>
             </File>
+            <File>
+              <FileName>abort_end_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\abort_end_task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

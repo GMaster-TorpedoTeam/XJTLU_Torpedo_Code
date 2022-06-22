@@ -52,6 +52,7 @@
 "xjtlu_torpeto\position_adjust_task.o"
 "xjtlu_torpeto\competition_shoot_task.o"
 "xjtlu_torpeto\competion_step_motor_task.o"
+"xjtlu_torpeto\abort_end_task.o"
 "xjtlu_torpeto\pid.o"
 "xjtlu_torpeto\oled.o"
 "xjtlu_torpeto\croutine.o"

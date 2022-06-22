@@ -3,6 +3,7 @@
 uint8_t c_step_flag = 0;
 fp32 c_step_motor_speed;
 uint16_t delay_counter = 0;
+uint8_t end_flag = 0;
 
 void c_step_task(void const * argument)
 {
@@ -27,6 +28,7 @@ void c_step_task(void const * argument)
 				{
 					c_step_flag = 3;
 					c_shoot_flag = 0;
+					finish_flag = 1;
 				}
 				
 			}
@@ -35,9 +37,16 @@ void c_step_task(void const * argument)
 				c_step_motor_speed = -17000;
 			}
 			
-			if (push_high_state == 1 || push_low_state == 1)
+			if (push_high_state == 1)
 			{
 				c_step_flag = 3;
+				c_shoot_flag = 0;
+				end_flag = 1;
+			}
+			
+			if ( push_low_state == 1)
+			{
+				c_step_flag = 0;
 				c_shoot_flag = 0;
 			}
 			
