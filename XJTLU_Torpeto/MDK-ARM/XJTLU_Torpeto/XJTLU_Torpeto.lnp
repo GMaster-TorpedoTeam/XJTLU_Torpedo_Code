@@ -50,6 +50,7 @@
 "xjtlu_torpeto\choose_torpedo_task.o"
 "xjtlu_torpeto\torpedo_data.o"
 "xjtlu_torpeto\position_adjust_task.o"
+"xjtlu_torpeto\competition_shoot_task.o"
 "xjtlu_torpeto\pid.o"
 "xjtlu_torpeto\oled.o"
 "xjtlu_torpeto\croutine.o"

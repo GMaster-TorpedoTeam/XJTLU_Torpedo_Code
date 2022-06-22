@@ -31,7 +31,7 @@ void step_motor_reset_task(void const * argument)
 				if (position_reset_flag == 5)
 				{
 					adjust_flag = 3;
-					StepMotor_reset_flag = 0;
+					position_reset_flag = 0;
 				}
 			}
 			

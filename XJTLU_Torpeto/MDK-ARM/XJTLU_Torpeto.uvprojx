@@ -1020,6 +1020,11 @@
               <FileType>1</FileType>
               <FilePath>..\applications\position_adjust_task.c</FilePath>
             </File>
+            <File>
+              <FileName>competition_shoot_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\competition_shoot_task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

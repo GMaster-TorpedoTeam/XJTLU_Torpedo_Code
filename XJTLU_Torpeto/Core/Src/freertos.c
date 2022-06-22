@@ -36,6 +36,7 @@
 #include "competition_mode_task.h"
 #include "choose_torpedo_task.h"
 #include "position_adjust_task.h"
+#include "competition_shoot_task.h"
 
 /* USER CODE END Includes */
 
@@ -43,6 +44,7 @@
 /* USER CODE BEGIN PTD */
 
 extern void mode_choose_task(void const * argument);
+extern void c_shoot_task(void const * argument);
 
 /* USER CODE END PTD */
 
@@ -73,6 +75,7 @@ osThreadId PositionResetTaskHandle;
 osThreadId CompetitionTaskHandle;
 osThreadId chooseTorpedoTaskHandle;
 osThreadId PositionAdjustTaskHandle;
+osThreadId CompetitionShootTaskHandle;
 
 /* USER CODE END FunctionPrototypes */
 
@@ -159,6 +162,9 @@ void MX_FREERTOS_Init(void) {
 	
 	osThreadDef(PositionAdjustTask, adjust_task, osPriorityNormal, 0, 128);
   PositionAdjustTaskHandle = osThreadCreate(osThread(PositionAdjustTask), NULL);
+	
+	osThreadDef(CompetitionShootTask, c_shoot_task, osPriorityNormal, 0, 128);
+  CompetitionShootTaskHandle = osThreadCreate(osThread(CompetitionShootTask), NULL);
 	
   /* USER CODE END RTOS_THREADS */
 

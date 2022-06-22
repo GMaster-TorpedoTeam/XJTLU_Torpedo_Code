@@ -84,3 +84,4 @@ xjtlu_torpeto\freertos.o: ..\applications\position_adjust_task.h
 xjtlu_torpeto\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 xjtlu_torpeto\freertos.o: ..\applications\Torpedo_data.h
 xjtlu_torpeto\freertos.o: ..\applications\step_motor_task.h
+xjtlu_torpeto\freertos.o: ..\applications\competition_shoot_task.h
