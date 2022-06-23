@@ -14,7 +14,7 @@ void choose_task(void const * argument)
 				counter++;
 				choose_flag = 2;
 			}
-			
+			/*
 			if(choose_flag == 3)
 			{
 				counter = 5;
@@ -26,7 +26,7 @@ void choose_task(void const * argument)
 				finish_flag = 1;
 				choose_flag = 4;
 			}
-			
+			*/
 			osDelay(2);
     }
 }

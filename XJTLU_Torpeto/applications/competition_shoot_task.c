@@ -8,8 +8,7 @@ void c_shoot_task(void const * argument)
 {
   while(1)
     {
-			
-			if (adjust_flag == 2 && (rc_ctrl.rc.ch[4] > 500 || rc_ctrl.key.v == KEY_PRESSED_OFFSET_G) && c_shoot_report == 0)
+			if (adjust_flag == 2 && c_shoot_report == 0 && ((rc_ctrl.rc.ch[4] > 500 && rc_as_button) || rc_ctrl.key.v == KEY_PRESSED_OFFSET_G))
 			{
 				c_shoot_flag = 1;
 			}
