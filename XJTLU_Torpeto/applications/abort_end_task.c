@@ -20,8 +20,8 @@ void abort_end_task(void const * argument)
 			
 			if (end_flag == 1)
 			{
-				choose_flag = 1;
-				adjust_flag = 1;
+				choose_flag = 0;
+				adjust_flag = 3;
 				c_shoot_report = 0;
 				c_step_flag = 2;
 				finish_flag = 0;

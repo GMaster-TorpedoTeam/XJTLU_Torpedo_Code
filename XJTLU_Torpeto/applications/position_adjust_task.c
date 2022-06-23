@@ -110,7 +110,7 @@ void adjust_task(void const * argument)
 				{
 					pitch_finish_flag = 0;
 					yaw_finish_flag = 0;
-					adjust_flag = 4;
+					adjust_flag = 1;
 				}
 			}
 			

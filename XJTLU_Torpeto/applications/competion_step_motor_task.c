@@ -19,7 +19,8 @@ void c_step_task(void const * argument)
 			{
 				c_step_motor_speed = 0;
 			}
-			else if (c_step_flag == 1)
+			
+			if (c_step_flag == 1)
 			{
 				c_step_motor_speed = 17000;
 				
@@ -40,7 +41,8 @@ void c_step_task(void const * argument)
 				}
 				
 			}
-			else if (c_step_flag == 2)
+			
+			if (c_step_flag == 2)
 			{
 				c_step_motor_speed = -17000;
 				

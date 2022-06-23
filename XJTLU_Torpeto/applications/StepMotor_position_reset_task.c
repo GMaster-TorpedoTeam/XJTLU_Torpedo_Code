@@ -20,6 +20,7 @@ void step_motor_reset_task(void const * argument)
 					yaw_position = 0;
 					pitch_position = 0;
 					StepMotor_reset_flag = 0;
+					competition_start_flag = 1;
 				}
 			}
 			
