@@ -16,16 +16,16 @@ extern fp32 push_speed_set;
 extern fp32 c_step_motor_speed;
 
 //摩擦轮1速度环PID
-#define ShootMOTOR1_SPEED_PID_KP 30.0f
+#define ShootMOTOR1_SPEED_PID_KP 50.0f
 #define ShootMOTOR1_SPEED_PID_KI 0.001f
-#define ShootMOTOR1_SPEED_PID_KD 0.8f
+#define ShootMOTOR1_SPEED_PID_KD 0.9f
 #define ShootMOTOR1_SPEED_PID_MAX_OUT 16000.0f
 #define ShootMOTOR1_SPEED_PID_MAX_IOUT 2000.0f
 
 //摩擦轮2速度环PID
-#define ShootMOTOR2_SPEED_PID_KP 30.0f
+#define ShootMOTOR2_SPEED_PID_KP 50.0f
 #define ShootMOTOR2_SPEED_PID_KI 0.001f
-#define ShootMOTOR2_SPEED_PID_KD 0.8f
+#define ShootMOTOR2_SPEED_PID_KD 0.9f
 #define ShootMOTOR2_SPEED_PID_MAX_OUT 16000.0f
 #define ShootMOTOR2_SPEED_PID_MAX_IOUT 2000.0f
 

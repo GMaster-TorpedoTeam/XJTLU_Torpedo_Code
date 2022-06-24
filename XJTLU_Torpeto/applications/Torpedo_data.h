@@ -5,26 +5,26 @@
 #include "struct_typedef.h"
 
 ///////一号飞镖参数//////
-#define Torpedo1_pitch 	80
-#define Torpedo1_yaw 		-150
+#define Torpedo1_pitch 	-479
+#define Torpedo1_yaw 		-380
 //#define Torpedo1_round 	1
 #define Torpedo1_rank 	1
 
 ///////二号飞镖参数//////
-#define Torpedo2_pitch 	-40
-#define Torpedo2_yaw 		10
+#define Torpedo2_pitch 	-395
+#define Torpedo2_yaw 		31
 //#define Torpedo2_round 	1
 #define Torpedo2_rank 	2
 
 ///////三号飞镖参数//////
-#define Torpedo3_pitch 	34
-#define Torpedo3_yaw 		-43
+#define Torpedo3_pitch 	604
+#define Torpedo3_yaw 		-288
 //#define Torpedo3_round 	1
 #define Torpedo3_rank 	3
 
 ///////四号飞镖参数//////
-#define Torpedo4_pitch 	-15
-#define Torpedo4_yaw 		110
+#define Torpedo4_pitch 	333
+#define Torpedo4_yaw 		-421
 //#define Torpedo4_round 	1
 #define Torpedo4_rank 	4
 

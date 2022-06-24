@@ -7,7 +7,6 @@
 #include "cmsis_os.h"
 #include "remote_control.h"
 
-#define shoot_speed 8000
 #define rc_as_button 0
 
 extern RC_ctrl_t rc_ctrl;

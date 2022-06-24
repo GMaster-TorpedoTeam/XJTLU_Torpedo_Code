@@ -12,6 +12,7 @@ extern int yaw_position;
 extern int pitch_position;
 extern uint8_t adjust_flag;
 extern uint8_t competition_start_flag;
+extern uint8_t test_flag;
 
 extern void step_motor_reset_task(void const * argument);
 
