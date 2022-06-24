@@ -14,6 +14,7 @@ extern uint8_t adjust_flag;
 extern uint8_t c_shoot_report;
 extern uint8_t c_step_flag;
 extern uint8_t end_flag;
+extern uint16_t delay_counter;
 
 extern void abort_end_task(void const * argument);
 

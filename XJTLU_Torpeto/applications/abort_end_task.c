@@ -27,6 +27,7 @@ void abort_end_task(void const * argument)
 				finish_flag = 0;
 				circle_counter = 0;
 				end_flag = 0;
+				delay_counter = 0;
 			}
 			
 			osDelay(2);
