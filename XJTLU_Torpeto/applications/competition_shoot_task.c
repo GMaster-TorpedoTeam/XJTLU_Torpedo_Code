@@ -13,7 +13,7 @@ void c_shoot_task(void const * argument)
     {
 			if (test_flag == 0)
 			{
-				shoot_speed = 8000;
+				shoot_speed = 8500;
 			}
 			else if (test_flag == 1)
 			{

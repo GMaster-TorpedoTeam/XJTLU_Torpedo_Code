@@ -8,6 +8,7 @@
 #include "user_pid.h"
 #include "bsp_StepMotor.h"
  #include "competition_shoot_task.h" 
+ #include "remote_control.h"
 
 #define delay_time 2000
 
@@ -15,6 +16,7 @@ extern uint8_t c_shoot_report;
 extern pid_type_def C_PushMotor_SPEED;
 extern uint8_t c_shoot_flag;
 extern uint8_t finish_flag;
+extern RC_ctrl_t rc_ctrl;
 
 extern void c_step_task(void const * argument);
 

@@ -53,9 +53,11 @@ void c_step_task(void const * argument)
 				}
 			}
 			
-			
-			user_pid_Calc();
-			CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, C_PushMotor_SPEED.out);
+			if(rc_ctrl.rc.s[1] == 1)
+			{
+				user_pid_Calc();
+				CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, C_PushMotor_SPEED.out);
+			}
 			
 			osDelay(2);
     }
