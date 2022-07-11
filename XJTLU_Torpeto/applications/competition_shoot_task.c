@@ -5,6 +5,7 @@ uint8_t c_shoot_report = 0;
 uint16_t shoot_delay_flag = 0;
 uint8_t  test_flag;
 uint16_t shoot_speed;
+fp32 c_shoot_speed_set;
 
 void c_shoot_task(void const * argument)
 {
@@ -28,11 +29,11 @@ void c_shoot_task(void const * argument)
 			
 			if (c_shoot_flag == 0)
 			{
-				shoot_speed_set = 0;
+				c_shoot_speed_set = 0;
 			}
 			else if(c_shoot_flag == 1)
 			{
-				shoot_speed_set = shoot_speed;
+				c_shoot_speed_set = shoot_speed;
 				
 				shoot_delay_flag++;
 				if (shoot_delay_flag == 300)

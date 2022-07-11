@@ -56,7 +56,7 @@ void c_step_task(void const * argument)
 			if(rc_ctrl.rc.s[1] == 1)
 			{
 				user_pid_Calc();
-				CAN_cmd_Torpedo(ShootMotor1.out, ShootMotor2.out, C_PushMotor_SPEED.out);
+				CAN_cmd_Torpedo(C_ShootMotor1.out, C_ShootMotor2.out, C_PushMotor_SPEED.out);
 			}
 			
 			osDelay(2);

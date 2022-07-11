@@ -17,6 +17,8 @@ extern pid_type_def C_PushMotor_SPEED;
 extern uint8_t c_shoot_flag;
 extern uint8_t finish_flag;
 extern RC_ctrl_t rc_ctrl;
+extern pid_type_def C_ShootMotor1;
+extern pid_type_def C_ShootMotor2;
 
 extern void c_step_task(void const * argument);
 

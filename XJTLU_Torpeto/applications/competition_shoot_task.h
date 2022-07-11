@@ -11,7 +11,7 @@
 
 extern RC_ctrl_t rc_ctrl;
 extern uint8_t adjust_flag;
-extern fp32 shoot_speed_set;
+//extern fp32 shoot_speed_set;
 
 extern void c_shoot_task(void const * argument);
 

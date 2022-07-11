@@ -14,6 +14,7 @@ extern motor_measure_t motor_chassis[7];
 extern fp32 shoot_speed_set;
 extern fp32 push_speed_set;
 extern fp32 c_step_motor_speed;
+extern fp32 c_shoot_speed_set;
 
 //Ä¦²ÁÂÖ1ËÙ¶È»·PID
 #define ShootMOTOR1_SPEED_PID_KP 50.0f
