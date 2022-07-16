@@ -18,14 +18,15 @@ void step_motor_reset_task(void const * argument)
 				
 				if (StepMotor_reset_flag == 5)
 				{
-					yaw_position = 0;
-					pitch_position = 0;
+					adjust_flag = 3;
+					//yaw_position = 0;
+					//pitch_position = 0;
 					StepMotor_reset_flag = 0;
 				}
 			}
 			
 			
-			
+	/*		
 			//两边拨杆拨中，遥杆\/上外八 步进电机移动至初始位置
 			if (rc_ctrl.rc.s[1] == 3 && rc_ctrl.rc.s[0] == 3 && rc_ctrl.rc.ch[0] > 500 && rc_ctrl.rc.ch[1] > 500
 				&& rc_ctrl.rc.ch[2] < -500 && rc_ctrl.rc.ch[3] > 500)
@@ -39,6 +40,8 @@ void step_motor_reset_task(void const * argument)
 				}
 				
 			}
+			*/
+			
 			
 			//两边拨杆拨中，遥杆/\下外八 切换测试/比赛摩擦轮转速
 			if (rc_ctrl.rc.s[1] == 3 && rc_ctrl.rc.s[0] == 3 && rc_ctrl.rc.ch[0] > 500 && rc_ctrl.rc.ch[1] < -500

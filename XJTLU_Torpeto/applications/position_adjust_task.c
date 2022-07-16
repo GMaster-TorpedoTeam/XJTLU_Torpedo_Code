@@ -70,6 +70,30 @@ void adjust_task(void const * argument)
 			
 			if (adjust_flag == 3)
 			{
+				//yaw÷·
+				if (yaw_limit_state == 0)
+				{
+					HAL_GPIO_WritePin(motor_yaw_DIR_GPIO, motor_yaw_DIR_PIN, motor_yaw_Move_Left);
+					PWM_Pulse_Control(motor_yaw_TIM, pulse_step,pulse_step);
+				}
+				if (yaw_limit_state == 1)
+				{
+					yaw_finish_flag = 1;
+				}
+				
+				//pitch÷·
+				if (pitch_limit_state == 0)
+				{
+					HAL_GPIO_WritePin(motor_pitch_DIR_GPIO, motor_pitch_DIR_PIN, motor_pitch_Move_Low);
+					PWM_Pulse_Control(motor_pitch_TIM, pulse_step,pulse_step);
+				}
+				if (pitch_limit_state == 1)
+				{
+					pitch_finish_flag = 1;
+				}
+				
+				
+				/*
 				pitch_target = 0;
 				yaw_target		= 0;
 				temp_pitch 	= 	pitch_target - pitch_position;
@@ -104,12 +128,14 @@ void adjust_task(void const * argument)
 				{
 					yaw_finish_flag = 1;
 				}
-				
+				*/
 				
 				if(pitch_finish_flag == 1 && yaw_finish_flag == 1)
 				{
 					pitch_finish_flag = 0;
 					yaw_finish_flag = 0;
+					yaw_position = 0;
+					pitch_position = 0;
 					adjust_flag = 1;
 				}
 			}

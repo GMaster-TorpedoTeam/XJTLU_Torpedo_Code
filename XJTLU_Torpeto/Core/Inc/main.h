@@ -75,12 +75,16 @@ void Error_Handler(void);
 #define StepMotor2_pluse_signal_GPIO_Port GPIOC
 #define StepMotro1_Dir_Pin GPIO_PIN_13
 #define StepMotro1_Dir_GPIO_Port GPIOE
+#define pitch_limit_Pin GPIO_PIN_9
+#define pitch_limit_GPIO_Port GPIOE
 #define StepMotor1_pluse_signal_Pin GPIO_PIN_11
 #define StepMotor1_pluse_signal_GPIO_Port GPIOE
 #define StepMotro2_Dir_Pin GPIO_PIN_14
 #define StepMotro2_Dir_GPIO_Port GPIOE
 #define OLED_CS_Pin GPIO_PIN_12
 #define OLED_CS_GPIO_Port GPIOB
+#define yaw_limit_Pin GPIO_PIN_14
+#define yaw_limit_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

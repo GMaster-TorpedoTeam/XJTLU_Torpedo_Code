@@ -20,7 +20,7 @@ void rc2StepMotor(TIM_TypeDef* TIMx)
 				
 				
 			}
-		else if(rc_ctrl.rc.ch[2] <= -RC_DeadZone )
+		else if(rc_ctrl.rc.ch[2] <= -RC_DeadZone && yaw_limit_state != 1)
 			{
 				HAL_GPIO_WritePin(motor_yaw_DIR_GPIO, motor_yaw_DIR_PIN, motor_yaw_Move_Left);
 				//fre = Set_Fre;
@@ -35,6 +35,8 @@ void rc2StepMotor(TIM_TypeDef* TIMx)
 			}
 		
 	}
+	
+	
 	else if (TIMx == motor_pitch_TIM)
 	{
 		
@@ -46,7 +48,7 @@ void rc2StepMotor(TIM_TypeDef* TIMx)
 				//HAL_TIM_PWM_Start(&motor_pitch_TIM_Handle,motor_pitch_CHANNAL);
 				PWM_Pulse_Control(motor_pitch_TIM, pulse_step,pulse_step);
 			}
-		else if(rc_ctrl.rc.ch[1] <= -RC_DeadZone)
+		else if(rc_ctrl.rc.ch[1] <= -RC_DeadZone && pitch_limit_state != 1)
 			{
 				HAL_GPIO_WritePin(motor_pitch_DIR_GPIO, motor_pitch_DIR_PIN, motor_pitch_Move_Low);
 				//fre = Set_Fre;
