@@ -9,6 +9,8 @@
 #include "cmsis_os.h"
 #include "user_pid.h"
 
+#define turn_back_time 2400
+
 extern RC_ctrl_t rc_ctrl;
 extern pid_type_def ShootMotor1;
 extern pid_type_def ShootMotor2;
