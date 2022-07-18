@@ -50,6 +50,15 @@ void shoot_motor_speed(void)
 	{
 		shoot_speed_set -= 500;
 	}
+	
+	if(rc_ctrl.rc.ch[3] > 200)
+	{
+		shoot_speed_set += 100;
+	}
+	else if (rc_ctrl.rc.ch[3] < -200)
+	{
+		shoot_speed_set -= 100;
+	}
 }
 
 void push_motor_speed(void)
@@ -89,7 +98,7 @@ void shoot_speed_task(void const * argument)
 			{
 				turn_back_counter++;
 				
-				if(turn_back_counter >= turn_back_time)
+				if(turn_back_counter >= turn_back_time || push_low_state == 1)
 				{
 					turn_back_counter = 0;
 					turn_back_flag = 0;
