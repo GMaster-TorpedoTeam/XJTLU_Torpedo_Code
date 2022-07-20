@@ -71,11 +71,10 @@ void push_motor_speed(void)
 	{
 		push_speed_set = -17000;
 	}
-	else if(turn_back_flag == 1)
+	else if(turn_back_flag == 1 && rc_ctrl.rc.s[1] == 2 && rc_ctrl.rc.s[0] == 2 )
 	{
 		push_speed_set = -17000;
 	}
-	
 	else
 	{
 		push_speed_set = 0;
@@ -94,7 +93,7 @@ void shoot_speed_task(void const * argument)
 				turn_back_flag = 1;
 			}
 			
-			if(turn_back_flag == 1)
+			if(turn_back_flag == 1 && rc_ctrl.rc.s[1] == 2 && rc_ctrl.rc.s[0] == 2)
 			{
 				turn_back_counter++;
 				
