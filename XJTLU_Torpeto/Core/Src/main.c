@@ -40,6 +40,7 @@
 #include "OLED_task.h"
 #include "mode_task.h"
 #include "Torpedo_data.h"
+#include "bsp_flash.h"
 
 /* USER CODE END Includes */
 
@@ -128,6 +129,8 @@ int main(void)
 	
 		HAL_TIM_Base_Start_IT(&motor_pitch_PWM_Slave_TIM_Handle);
   __HAL_TIM_SET_AUTORELOAD(&motor_pitch_PWM_Slave_TIM_Handle, 0);
+	
+	adjust_flag = 3; //运行到两个微动处，作为绝对零点
 
 
   /* USER CODE END 2 */

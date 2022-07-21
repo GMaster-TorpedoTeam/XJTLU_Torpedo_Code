@@ -74,3 +74,4 @@ xjtlu_torpeto\main.o: E:\program\keil\ARM\ARMCC\Bin\..\include\stdlib.h
 xjtlu_torpeto\main.o: ..\applications\OLED_task.h
 xjtlu_torpeto\main.o: ..\applications\mode_task.h
 xjtlu_torpeto\main.o: ..\applications\Torpedo_data.h
+xjtlu_torpeto\main.o: ..\bsp\bsp_flash.h

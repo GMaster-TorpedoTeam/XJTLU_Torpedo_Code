@@ -940,6 +940,11 @@
               <FileType>1</FileType>
               <FilePath>..\bsp\bsp_usart.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\bsp_flash.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1034,6 +1039,11 @@
               <FileName>abort_end_task.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\applications\abort_end_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash_read_write.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\applications\flash_read_write.c</FilePath>
             </File>
           </Files>
         </Group>

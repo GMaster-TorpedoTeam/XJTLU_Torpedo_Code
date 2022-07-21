@@ -93,11 +93,23 @@ void adjust_task(void const * argument)
 				}
 				
 				
-				/*
-				pitch_target = 0;
-				yaw_target		= 0;
-				temp_pitch 	= 	pitch_target - pitch_position;
-				temp_yaw		=		yaw_target - yaw_position;
+				if(pitch_finish_flag == 1 && yaw_finish_flag == 1)
+				{
+					pitch_finish_flag = 0;
+					yaw_finish_flag = 0;
+					yaw_position = 0;
+					pitch_position = 0;
+					adjust_flag = 1;
+				}
+			}
+			
+			
+			if(adjust_flag == 4)
+			{
+				//pitch_target 	= 	pitch_data[0];
+				//yaw_target		= 	yaw_data[0];
+				temp_pitch 		= 	pitch_target - pitch_position;
+				temp_yaw			=		yaw_target - yaw_position;
 				
 				if(temp_pitch > 0)
 				{
@@ -114,6 +126,7 @@ void adjust_task(void const * argument)
 					pitch_finish_flag = 1;
 				}
 				
+				
 				if (temp_yaw > 0)
 				{
 					HAL_GPIO_WritePin(motor_yaw_DIR_GPIO, motor_yaw_DIR_PIN, motor_yaw_Move_Right);
@@ -128,16 +141,14 @@ void adjust_task(void const * argument)
 				{
 					yaw_finish_flag = 1;
 				}
-				*/
 				
 				if(pitch_finish_flag == 1 && yaw_finish_flag == 1)
 				{
 					pitch_finish_flag = 0;
 					yaw_finish_flag = 0;
-					yaw_position = 0;
-					pitch_position = 0;
 					adjust_flag = 1;
 				}
+				
 			}
 			
 			osDelay(2);

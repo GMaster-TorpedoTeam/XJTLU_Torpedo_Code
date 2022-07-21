@@ -50,3 +50,7 @@ xjtlu_torpeto\stepmotor_position_reset_task.o: ../Middlewares/Third_Party/FreeRT
 xjtlu_torpeto\stepmotor_position_reset_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 xjtlu_torpeto\stepmotor_position_reset_task.o: ..\applications\remote_control.h
 xjtlu_torpeto\stepmotor_position_reset_task.o: ..\bsp\bsp_rc.h
+xjtlu_torpeto\stepmotor_position_reset_task.o: ..\applications\flash_read_write.h
+xjtlu_torpeto\stepmotor_position_reset_task.o: ..\bsp\bsp_flash.h
+xjtlu_torpeto\stepmotor_position_reset_task.o: ..\applications\step_motor_task.h
+xjtlu_torpeto\stepmotor_position_reset_task.o: ..\bsp\bsp_StepMotor.h
